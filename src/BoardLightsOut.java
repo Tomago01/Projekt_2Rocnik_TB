@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.*;
+import java.util.Random;
 
 public class BoardLightsOut extends JFrame {
         private int[][] board;
@@ -11,7 +13,18 @@ public class BoardLightsOut extends JFrame {
         this.buttons = new JButton[size][size];
 
         }
-
+    private void initializeBoard() {
+        Random random = new Random();
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (random.nextBoolean()) {
+                    board[i][j] = Color.BLACK.getRGB();
+                } else {
+                    board[i][j] = Color.WHITE.getRGB();
+                }
+                }
+            }
+        }
 
 
 
