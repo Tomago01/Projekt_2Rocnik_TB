@@ -26,6 +26,30 @@ public class BoardLightsOut extends JFrame {
             }
         }
 
+    private void initializeGame() {
+        setTitle("Lights Out Game");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        int windowSize = 1000;
+        setSize(windowSize, windowSize);
+
+        JPanel boardPanel = new JPanel(new GridLayout(size, size));
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                JButton button = new JButton();
+                button.setBackground(new Color(board[i][j]));
+                button.addActionListener(new LogicButtonsClick(i, j,board,buttons,size));
+                buttons[i][j] = button;
+                boardPanel.add(button);
+            }
+        }
+
+        getContentPane().add(boardPanel);
+        setVisible(true);
+        setResizable(true);
+    }
+
+
 
 
 

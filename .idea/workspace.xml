@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="naimportoval jsem si metodu actionPerformed pres rozhtani ActionListener abych mohl provadet akce s tlacitkama a v te metode logiku po kliknuti na tlacitko ze zmeni barvu">
-      <change beforePath="$PROJECT_DIR$/src/LogicButtonsClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogicButtonsClick.java" afterDir="false" />
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715016031862</updated>
       <workItem from="1715016033893" duration="1879000" />
-      <workItem from="1715026432016" duration="2381000" />
+      <workItem from="1715026432016" duration="3162000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -75,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715280836457</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed">
+      <created>1715281218017</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715281218017</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +105,7 @@
     <MESSAGE value="metoda pro inicializaci hraciho pole a nahodne rozprostrit dlazdice" />
     <MESSAGE value="pridani nove tridy LogicButtonsClick ve ktere budu delat logiku reagovani&#10;tlacitek ve hre lightsout" />
     <MESSAGE value="naimportoval jsem si metodu actionPerformed pres rozhtani ActionListener abych mohl provadet akce s tlacitkama a v te metode logiku po kliknuti na tlacitko ze zmeni barvu" />
-    <option name="LAST_COMMIT_MESSAGE" value="naimportoval jsem si metodu actionPerformed pres rozhtani ActionListener abych mohl provadet akce s tlacitkama a v te metode logiku po kliknuti na tlacitko ze zmeni barvu" />
+    <MESSAGE value="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed" />
   </component>
 </project>
