@@ -11,6 +11,8 @@ public class BoardLightsOut extends JFrame {
         this.size = size;
         this.board = new int[size][size];
         this.buttons = new JButton[size][size];
+        initializeBoard();
+        initializeGame();
 
         }
     private void initializeBoard() {
