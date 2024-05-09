@@ -25,5 +25,27 @@ public class LogicButtonsClick implements ActionListener {
             board[row][column] = Color.BLACK.getRGB();
         }
         buttons[row][column].setBackground(new Color(board[row][column]));
+        toggleColorsAround(row,column);
+
     }
+
+    public void toggleColorIfValid(int row, int col) {
+        if (row >= 0 && row < size && col >= 0 && col < size) {
+            if (board[row][col] == Color.BLACK.getRGB()) {
+                board[row][col] = Color.WHITE.getRGB();
+            } else {
+                board[row][col] = Color.BLACK.getRGB();
+            }
+            buttons[row][col].setBackground(new Color(board[row][col]));
+        }
+    }
+
+        private void toggleColorsAround(int row, int col) {
+            toggleColorIfValid(row - 1, col);
+            toggleColorIfValid(row + 1, col);
+            toggleColorIfValid(row, col - 1);
+            toggleColorIfValid(row, col + 1);
+        }
+
+
 }
