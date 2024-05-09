@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="vkladam metody do konstruktoru a zkousim v mainu">
+      <change afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715016031862</updated>
       <workItem from="1715016033893" duration="1879000" />
-      <workItem from="1715026432016" duration="3162000" />
+      <workItem from="1715026432016" duration="4149000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -83,7 +83,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715281218017</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="pridavam metodu initializeGame ve ktere vytvarim okno(nastavuji) a Jpanel do ktereho vkladam jednotlive tlacitka">
+      <created>1715282005216</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715282005216</updated>
+    </task>
+    <task id="LOCAL-00007" summary="vkladam metody do konstruktoru a zkousim v mainu">
+      <created>1715282140775</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715282140775</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +120,8 @@
     <MESSAGE value="pridani nove tridy LogicButtonsClick ve ktere budu delat logiku reagovani&#10;tlacitek ve hre lightsout" />
     <MESSAGE value="naimportoval jsem si metodu actionPerformed pres rozhtani ActionListener abych mohl provadet akce s tlacitkama a v te metode logiku po kliknuti na tlacitko ze zmeni barvu" />
     <MESSAGE value="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed" />
+    <MESSAGE value="pridavam metodu initializeGame ve ktere vytvarim okno(nastavuji) a Jpanel do ktereho vkladam jednotlive tlacitka" />
+    <MESSAGE value="vkladam metody do konstruktoru a zkousim v mainu" />
+    <option name="LAST_COMMIT_MESSAGE" value="vkladam metody do konstruktoru a zkousim v mainu" />
   </component>
 </project>
