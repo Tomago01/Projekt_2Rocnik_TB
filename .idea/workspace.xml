@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="metoda pro inicializaci hraciho pole a nahodne rozprostrit dlazdice">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/zkousec_projektu2"
+    "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/Projekt_2Rocnik_TB"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -45,8 +45,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715016031862</updated>
-      <workItem from="1715016033893" duration="1410000" />
+      <workItem from="1715016033893" duration="1879000" />
+      <workItem from="1715026432016" duration="941000" />
     </task>
+    <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
+      <created>1715025971760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715025971760</updated>
+    </task>
+    <task id="LOCAL-00002" summary="metoda pro inicializaci hraciho pole a nahodne rozprostrit dlazdice">
+      <created>1715026148493</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715026148493</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -62,5 +78,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pridani kostruktoru do tridy BoardLightsOut" />
+    <MESSAGE value="metoda pro inicializaci hraciho pole a nahodne rozprostrit dlazdice" />
+    <option name="LAST_COMMIT_MESSAGE" value="metoda pro inicializaci hraciho pole a nahodne rozprostrit dlazdice" />
   </component>
 </project>
