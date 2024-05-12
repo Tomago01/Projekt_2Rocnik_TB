@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Vytvoreni metody pro zamichani herniho pole">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle">
       <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +46,7 @@
       <updated>1715016031862</updated>
       <workItem from="1715016033893" duration="1879000" />
       <workItem from="1715026432016" duration="4841000" />
-      <workItem from="1715541834662" duration="1533000" />
+      <workItem from="1715541834662" duration="1833000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -119,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715543000037</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle">
+      <created>1715543441421</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715543441421</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +153,7 @@
     <MESSAGE value="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem" />
     <MESSAGE value="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat" />
     <MESSAGE value="Vytvoreni metody pro zamichani herniho pole" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvoreni metody pro zamichani herniho pole" />
+    <MESSAGE value="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle" />
   </component>
 </project>
