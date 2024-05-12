@@ -9,14 +9,14 @@ public class BoardLightsOut extends JFrame {
     private int size;
     private JButton[][] buttons;
 
-    private ButtonsClickLogic buttonsClickLogic;
+    private LogicButtonsClick logicButtonsClick;
 
 
     public BoardLightsOut(int size) {
         this.size = size;
         this.board = new int[size][size];
         this.buttons = new JButton[size][size];
-        this.buttonsClickLogic = new ButtonsClickLogic(0, 0, board, buttons, size);
+        this.logicButtonsClick = new LogicButtonsClick(0, 0, board, buttons, size);
         initializeBoard();
         initializeGame();
 
@@ -30,11 +30,11 @@ public class BoardLightsOut extends JFrame {
         for (int i = 0; i < numShuffles; i++) {
             int row = rand.nextInt(size);
             int col = rand.nextInt(size);
-            buttonsClickLogic.toggleColorIfValid(row, col);
-            buttonsClickLogic.toggleColorIfValid(row - 1, col);
-            buttonsClickLogic.toggleColorIfValid(row + 1, col);
-            buttonsClickLogic.toggleColorIfValid(row, col - 1);
-            buttonsClickLogic.toggleColorIfValid(row, col + 1);
+            logicButtonsClick.toggleColorIfValid(row, col);
+            logicButtonsClick.toggleColorIfValid(row - 1, col);
+            logicButtonsClick.toggleColorIfValid(row + 1, col);
+            logicButtonsClick.toggleColorIfValid(row, col - 1);
+            logicButtonsClick.toggleColorIfValid(row, col + 1);
             if (areAllLightsOff()) {
                 shuffleBoard();
             }
@@ -53,11 +53,11 @@ public class BoardLightsOut extends JFrame {
     }
 
     private void handleClick(int row, int col) {
-        buttonsClickLogic.toggleColorIfValid(row, col);
-        buttonsClickLogic.toggleColorIfValid(row - 1, col);
-        buttonsClickLogic.toggleColorIfValid(row + 1, col);
-        buttonsClickLogic.toggleColorIfValid(row, col - 1);
-        buttonsClickLogic.toggleColorIfValid(row, col + 1);
+        logicButtonsClick.toggleColorIfValid(row, col);
+        logicButtonsClick.toggleColorIfValid(row - 1, col);
+        logicButtonsClick.toggleColorIfValid(row + 1, col);
+        logicButtonsClick.toggleColorIfValid(row, col - 1);
+        logicButtonsClick.toggleColorIfValid(row, col + 1);
         if (areAllLightsOff()) {
             System.out.println("WINNER");
             dispose();
