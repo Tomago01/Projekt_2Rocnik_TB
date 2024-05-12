@@ -9,14 +9,14 @@ public class BoardLightsOut extends JFrame {
     private int size;
     private JButton[][] buttons;
 
-    private LogicButtonsClick logicButtonsClick;
+    private ButtonsClickLogic buttonsClickLogic;
 
 
     public BoardLightsOut(int size) {
         this.size = size;
         this.board = new int[size][size];
         this.buttons = new JButton[size][size];
-        this.logicButtonsClick = new LogicButtonsClick(0, 0, board, buttons, size);
+        this.buttonsClickLogic = new ButtonsClickLogic(0, 0, board, buttons, size);
         initializeBoard();
         initializeGame();
 
@@ -30,11 +30,14 @@ public class BoardLightsOut extends JFrame {
         for (int i = 0; i < numShuffles; i++) {
             int row = rand.nextInt(size);
             int col = rand.nextInt(size);
-            logicButtonsClick.toggleColorIfValid(row, col);
-            logicButtonsClick.toggleColorIfValid(row - 1, col); // Up
-            logicButtonsClick.toggleColorIfValid(row + 1, col); // Down
-            logicButtonsClick.toggleColorIfValid(row, col - 1); // Left
-            logicButtonsClick.toggleColorIfValid(row, col + 1); // Right
+            buttonsClickLogic.toggleColorIfValid(row, col);
+            buttonsClickLogic.toggleColorIfValid(row - 1, col);
+            buttonsClickLogic.toggleColorIfValid(row + 1, col);
+            buttonsClickLogic.toggleColorIfValid(row, col - 1);
+            buttonsClickLogic.toggleColorIfValid(row, col + 1);
+            if (areAllLightsOff()) {
+                shuffleBoard();
+            }
         }
     }
 
@@ -49,8 +52,17 @@ public class BoardLightsOut extends JFrame {
         return true;
     }
 
-
-
+    private void handleClick(int row, int col) {
+        buttonsClickLogic.toggleColorIfValid(row, col);
+        buttonsClickLogic.toggleColorIfValid(row - 1, col);
+        buttonsClickLogic.toggleColorIfValid(row + 1, col);
+        buttonsClickLogic.toggleColorIfValid(row, col - 1);
+        buttonsClickLogic.toggleColorIfValid(row, col + 1);
+        if (areAllLightsOff()) {
+            System.out.println("WINNER");
+            dispose();
+        }
+    }
 
 
     private void initializeBoard() {
@@ -67,7 +79,7 @@ public class BoardLightsOut extends JFrame {
     }
 
     public void initializeGame() {
-        setTitle("Lights Out");
+        setTitle("Lights Out Game");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setSize(900, 950);
 
@@ -79,7 +91,25 @@ public class BoardLightsOut extends JFrame {
             for (int j = 0; j < size; j++) {
                 JButton button = new JButton();
                 button.setBackground(new Color(board[i][j]));
-                button.addActionListener(new LogicButtonsClick(i, j, board, buttons, size));
+                button.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        JButton clickedButton = (JButton) e.getSource();
+                        int row = -1, col = -1;
+                        for (int i = 0; i < size; i++) {
+                            for (int j = 0; j < size; j++) {
+                                if (buttons[i][j] == clickedButton) {
+                                    row = i;
+                                    col = j;
+                                    break;
+                                }
+                            }
+                        }
+                        if (row != -1 && col != -1) {
+                            handleClick(row, col);
+                        }
+                    }
+                });
                 buttons[i][j] = button;
                 boardPanel.add(button);
             }
@@ -101,7 +131,6 @@ public class BoardLightsOut extends JFrame {
         getContentPane().add(mainPanel);
         setResizable(false);
         setVisible(true);
-
     }
 
 

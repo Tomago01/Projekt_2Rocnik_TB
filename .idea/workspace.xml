@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LogicButtonsClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonsClickLogic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +48,7 @@
       <updated>1715016031862</updated>
       <workItem from="1715016033893" duration="1879000" />
       <workItem from="1715026432016" duration="4841000" />
-      <workItem from="1715541834662" duration="1833000" />
+      <workItem from="1715541834662" duration="2541000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -125,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715543441421</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna">
+      <created>1715543729959</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715543729959</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +163,7 @@
     <MESSAGE value="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat" />
     <MESSAGE value="Vytvoreni metody pro zamichani herniho pole" />
     <MESSAGE value="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle" />
+    <MESSAGE value="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna" />
   </component>
 </project>
