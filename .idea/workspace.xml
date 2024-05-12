@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Vytvoreni pomocne metody handleClick kterou pouzuju v metode initializeGame abych mohl ukoncit hru pokud budou vsechna policka cerna. Vytvoreni podminky v shuffleBoard aby nemohla byt tlacitkem suffle hra vyhrana">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LogicButtonsClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ButtonsClickLogic.java" afterDir="false" />
@@ -48,7 +48,7 @@
       <updated>1715016031862</updated>
       <workItem from="1715016033893" duration="1879000" />
       <workItem from="1715026432016" duration="4841000" />
-      <workItem from="1715541834662" duration="2541000" />
+      <workItem from="1715541834662" duration="2930000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -134,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715543729959</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Vytvoreni pomocne metody handleClick kterou pouzuju v metode initializeGame abych mohl ukoncit hru pokud budou vsechna policka cerna. Vytvoreni podminky v shuffleBoard aby nemohla byt tlacitkem suffle hra vyhrana">
+      <created>1715544755877</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715544755877</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +171,7 @@
     <MESSAGE value="Vytvoreni metody pro zamichani herniho pole" />
     <MESSAGE value="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle" />
     <MESSAGE value="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna" />
+    <MESSAGE value="Vytvoreni pomocne metody handleClick kterou pouzuju v metode initializeGame abych mohl ukoncit hru pokud budou vsechna policka cerna. Vytvoreni podminky v shuffleBoard aby nemohla byt tlacitkem suffle hra vyhrana" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vytvoreni pomocne metody handleClick kterou pouzuju v metode initializeGame abych mohl ukoncit hru pokud budou vsechna policka cerna. Vytvoreni podminky v shuffleBoard aby nemohla byt tlacitkem suffle hra vyhrana" />
   </component>
 </project>
