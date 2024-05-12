@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/Projekt_2Rocnik_TB"
+    "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/zkousec_projektu2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -47,6 +48,7 @@
       <updated>1715016031862</updated>
       <workItem from="1715016033893" duration="1879000" />
       <workItem from="1715026432016" duration="4841000" />
+      <workItem from="1715541834662" duration="847000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -104,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715282982376</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat">
+      <created>1715542280203</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715542280203</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +139,7 @@
     <MESSAGE value="pridavam metodu initializeGame ve ktere vytvarim okno(nastavuji) a Jpanel do ktereho vkladam jednotlive tlacitka" />
     <MESSAGE value="vkladam metody do konstruktoru a zkousim v mainu" />
     <MESSAGE value="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem" />
+    <MESSAGE value="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat" />
+    <option name="LAST_COMMIT_MESSAGE" value="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat" />
   </component>
 </project>

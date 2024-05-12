@@ -7,7 +7,12 @@ public class BoardLightsOut extends JFrame {
         private int size;
         private JButton[][] buttons;
 
+        private LogicButtonsClick logicButtonsClick;
+
+
+
     public BoardLightsOut(int size) {
+        this.logicButtonsClick = new LogicButtonsClick(0, 0, board, buttons, size);
         this.size = size;
         this.board = new int[size][size];
         this.buttons = new JButton[size][size];
@@ -15,6 +20,33 @@ public class BoardLightsOut extends JFrame {
         initializeGame();
 
         }
+
+
+    private void shuffleBoard() {
+        Random rand = new Random();
+        int numShuffles = rand.nextInt(1000);
+
+        for (int i = 0; i < numShuffles; i++) {
+            int row = rand.nextInt(size);
+            int col = rand.nextInt(size);
+            logicButtonsClick.toggleColorIfValid(row, col);
+            logicButtonsClick.toggleColorIfValid(row - 1, col); // Up
+            logicButtonsClick.toggleColorIfValid(row + 1, col); // Down
+            logicButtonsClick.toggleColorIfValid(row, col - 1); // Left
+            logicButtonsClick.toggleColorIfValid(row, col + 1); // Right
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
     private void initializeBoard() {
         Random random = new Random();
         for (int i = 0; i < size; i++) {
