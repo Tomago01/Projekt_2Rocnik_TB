@@ -1,25 +1,26 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Random;
 
 public class BoardLightsOut extends JFrame {
-        private int[][] board;
-        private int size;
-        private JButton[][] buttons;
+    private int[][] board;
+    private int size;
+    private JButton[][] buttons;
 
-        private LogicButtonsClick logicButtonsClick;
-
+    private LogicButtonsClick logicButtonsClick;
 
 
     public BoardLightsOut(int size) {
-        this.logicButtonsClick = new LogicButtonsClick(0, 0, board, buttons, size);
         this.size = size;
         this.board = new int[size][size];
         this.buttons = new JButton[size][size];
+        this.logicButtonsClick = new LogicButtonsClick(0, 0, board, buttons, size);
         initializeBoard();
         initializeGame();
 
-        }
+    }
 
 
     private void shuffleBoard() {
@@ -43,10 +44,6 @@ public class BoardLightsOut extends JFrame {
 
 
 
-
-
-
-
     private void initializeBoard() {
         Random random = new Random();
         for (int i = 0; i < size; i++) {
@@ -56,15 +53,16 @@ public class BoardLightsOut extends JFrame {
                 } else {
                     board[i][j] = Color.WHITE.getRGB();
                 }
-                }
             }
         }
+    }
 
-    private void initializeGame() {
-        setTitle("Lights Out Game");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        int windowSize = 1000;
-        setSize(windowSize, windowSize);
+    public void initializeGame() {
+        setTitle("Lights Out");
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setSize(900, 950);
+
+        JPanel mainPanel = new JPanel(new BorderLayout());
 
         JPanel boardPanel = new JPanel(new GridLayout(size, size));
 
@@ -72,23 +70,30 @@ public class BoardLightsOut extends JFrame {
             for (int j = 0; j < size; j++) {
                 JButton button = new JButton();
                 button.setBackground(new Color(board[i][j]));
-                button.addActionListener(new LogicButtonsClick(i, j,board,buttons,size));
+                button.addActionListener(new LogicButtonsClick(i, j, board, buttons, size));
                 buttons[i][j] = button;
                 boardPanel.add(button);
             }
         }
 
-        getContentPane().add(boardPanel);
+        JPanel newGamePanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        JButton newGameButton = new JButton("Shuffle");
+        newGamePanel.add(newGameButton);
+        newGameButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                shuffleBoard();
+            }
+        });
+
+        mainPanel.add(boardPanel, BorderLayout.CENTER);
+        mainPanel.add(newGamePanel, BorderLayout.SOUTH);
+
+        getContentPane().add(mainPanel);
+        setResizable(false);
         setVisible(true);
-        setResizable(true);
+
     }
-
-
-
-
-
-
-
 
 
 }
