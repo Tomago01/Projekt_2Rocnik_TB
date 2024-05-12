@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="vkladam metody do konstruktoru a zkousim v mainu">
-      <change afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715016031862</updated>
       <workItem from="1715016033893" duration="1879000" />
-      <workItem from="1715026432016" duration="4149000" />
+      <workItem from="1715026432016" duration="4841000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -97,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715282140775</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem">
+      <created>1715282982376</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715282982376</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +129,7 @@
     <MESSAGE value="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed" />
     <MESSAGE value="pridavam metodu initializeGame ve ktere vytvarim okno(nastavuji) a Jpanel do ktereho vkladam jednotlive tlacitka" />
     <MESSAGE value="vkladam metody do konstruktoru a zkousim v mainu" />
-    <option name="LAST_COMMIT_MESSAGE" value="vkladam metody do konstruktoru a zkousim v mainu" />
+    <MESSAGE value="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem" />
   </component>
 </project>
