@@ -10,6 +10,7 @@ public class BoardLightsOut extends JFrame {
     private JButton[][] buttons;
 
     private ButtonsClickLogic buttonsClickLogic;
+    private Timer timer;
 
 
     public BoardLightsOut(int size) {
@@ -60,6 +61,7 @@ public class BoardLightsOut extends JFrame {
         buttonsClickLogic.toggleColorIfValid(row, col + 1);
         if (areAllLightsOff()) {
             System.out.println("WINNER");
+            System.out.println("You completed the puzzle in: "+ timer.getCurrentTime());
             dispose();
         }
     }
@@ -94,20 +96,21 @@ public class BoardLightsOut extends JFrame {
                 button.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        JButton clickedButton = (JButton) e.getSource();
+                        JButton clickedButton = (JButton)e.getSource();
                         int row = -1, col = -1;
-                        for (int i = 0; i < size; i++) {
-                            for (int j = 0; j < size; j++) {
-                                if (buttons[i][j] == clickedButton) {
-                                    row = i;
-                                    col = j;
+                        for (int k = 0; k < size; k++) {
+                            for (int l = 0; l < size; l++) {
+                                if (buttons[k][l] == clickedButton) {
+                                    row = k;
+                                    col = l;
                                     break;
                                 }
                             }
+                            if (row != -1 && col != -1) {
+                                break;
+                            }
                         }
-                        if (row != -1 && col != -1) {
-                            handleClick(row, col);
-                        }
+                        handleClick(row,col);
                     }
                 });
                 buttons[i][j] = button;
@@ -115,23 +118,37 @@ public class BoardLightsOut extends JFrame {
             }
         }
 
-        JPanel newGamePanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
-        JButton newGameButton = new JButton("Shuffle");
-        newGamePanel.add(newGameButton);
-        newGameButton.addActionListener(new ActionListener() {
+        JPanel settingPanel = new JPanel(new BorderLayout());
+
+        JPanel timerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        JLabel timerLabel = new JLabel();
+        timerPanel.add(timerLabel);
+        this.timer = new Timer(timerLabel);
+
+        JButton SuffleButton = new JButton("Shuffle");
+        SuffleButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
                 shuffleBoard();
             }
         });
 
+        settingPanel.add(SuffleButton, BorderLayout.CENTER);
+        settingPanel.add(timerPanel, BorderLayout.WEST);
+
         mainPanel.add(boardPanel, BorderLayout.CENTER);
-        mainPanel.add(newGamePanel, BorderLayout.SOUTH);
+        mainPanel.add(settingPanel, BorderLayout.SOUTH);
 
         getContentPane().add(mainPanel);
         setResizable(false);
         setVisible(true);
+
+
+        Timer timer = new Timer(timerLabel);
+        new Thread(timer).start();
     }
+
+
 
 
 }
