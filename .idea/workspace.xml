@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Upraveni par metod jako initializeGame nebo handleClick aby Timer fungoval tak jak bych chtel">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <workItem from="1715016033893" duration="1879000" />
       <workItem from="1715026432016" duration="4841000" />
       <workItem from="1715541834662" duration="3726000" />
-      <workItem from="1715545585303" duration="3583000" />
+      <workItem from="1715545585303" duration="4910000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -176,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715618604952</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna">
+      <created>1715619186640</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715619186640</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +218,7 @@
     <MESSAGE value="Vytvoril jsem metodu currentTime ktera udela nejaky format tech hodin a tu pak vkladam do metody run do cyklu ve kterem vlakno po sekundach uspavam a getter na metodu currentTime" />
     <MESSAGE value="Upraveni par metod jako initializeGamenebo handleClick aby Timer fungoval tak jak bych chtel" />
     <MESSAGE value="Upraveni par metod jako initializeGame nebo handleClick aby Timer fungoval tak jak bych chtel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upraveni par metod jako initializeGame nebo handleClick aby Timer fungoval tak jak bych chtel" />
+    <MESSAGE value="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna" />
   </component>
 </project>
