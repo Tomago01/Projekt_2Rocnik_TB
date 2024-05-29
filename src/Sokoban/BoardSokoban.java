@@ -1,6 +1,12 @@
 package Sokoban;
 
-public class BoardSokoban{
+import javax.swing.*;
+import java.awt.*;
+
+public class BoardSokoban extends JPanel {
+
+    private final int width = 1600;
+    private final int height = 1600;
 
     private char[][] level;
 
@@ -16,6 +22,15 @@ public class BoardSokoban{
         currentLevel = this.level;
         this.targetsForBoxes = new boolean[level.length][level[0].length];
     }
+
+    private void initializeBoard() {
+        setFocusable(true);
+        setPreferredSize(new Dimension(width, height));
+        initializeWorld();
+        requestFocusInWindow();
+    }
+
+
 
     public void initializeWorld() {
         for (int y = 0; y < level.length; y++) {
