@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridal jsem metodu initializeWorld ve ktere definuji charaktery pro hrace zavinacem a targetsForBoxes teckou. Metoda prochazi tu delku X,Y toho levlu a na tyhle charaktery nastavi danou funkci">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Vytvoreni metody drawWorld ktera vykresluje jak na herni desce budou vypadat jednotlive znaky pomoci novych promenych space a offset, offset jevelikost v pixelech od okraje plochy na ktere jsou charaktery a space jsou jednotliva policka. Trida Graphics mi pomaha pridat Images na znaky tyto obrazky jsem dal do slozky sources.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" afterDir="false" />
     </list>
@@ -50,7 +50,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="5560000" />
+      <workItem from="1717002370173" duration="7971000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -213,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717006247405</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="vytvoreni promenych na vysku a sirku v pixelech toho grafickeho prostredi a metody initializeBoard na definovani hraciho pole">
+      <created>1717008125552</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1717008125552</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,6 +260,8 @@
     <MESSAGE value="Upraveni metody handleClick tak aby ukazovala okno s vyhernim vysledkem a prejmenovani tridy Timer" />
     <MESSAGE value="Udelel jsem package pro lepsi prehlednost a delam novou tridu BoardSokoban ve ktere bude mechanika hry sokoban udelal jsem si promene se kteryma budu pracovat jako pole charakteru podle ceho budu delat levely a kazdy charakter bude mit jinou funkci. Souradnice pro pohyb hrace" />
     <MESSAGE value="pridal jsem metodu initializeWorld ve ktere definuji charaktery pro hrace zavinacem a targetsForBoxes teckou. Metoda prochazi tu delku X,Y toho levlu a na tyhle charaktery nastavi danou funkci" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridal jsem metodu initializeWorld ve ktere definuji charaktery pro hrace zavinacem a targetsForBoxes teckou. Metoda prochazi tu delku X,Y toho levlu a na tyhle charaktery nastavi danou funkci" />
+    <MESSAGE value="vytvoreni promenych na vysku a sirku v pixelech toho grafickeho prostredi a metody initializeBoard na definovani hraciho pole" />
+    <MESSAGE value="Vytvoreni metody drawWorld ktera vykresluje jak na herni desce budou vypadat jednotlive znaky pomoci novych promenych space a offset, offset jevelikost v pixelech od okraje plochy na ktere jsou charaktery a space jsou jednotliva policka. Trida Graphics mi pomaha pridat Images na znaky tyto obrazky jsem dal do slozky sources." />
+    <option name="LAST_COMMIT_MESSAGE" value="Vytvoreni metody drawWorld ktera vykresluje jak na herni desce budou vypadat jednotlive znaky pomoci novych promenych space a offset, offset jevelikost v pixelech od okraje plochy na ktere jsou charaktery a space jsou jednotliva policka. Trida Graphics mi pomaha pridat Images na znaky tyto obrazky jsem dal do slozky sources." />
   </component>
 </project>
