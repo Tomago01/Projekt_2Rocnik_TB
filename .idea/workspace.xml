@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Upraveni tridy StartingPage tak, aby se nedali otevrit okna tlacitkama nekolikrat, ale pokud budou otevrena tak se musi nejprve zavrit, aby jste je mohli znovu otevrit. Provedl jsem nejake graficke upravy napr font.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardLightsOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Timer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TimeCounter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,14 +30,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/Projekt_2Rocnik_TB"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tomik/Desktop/Projektova_slozka_2024/Projekt_2Rocnik_TB&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,7 +49,9 @@
       <workItem from="1715016033893" duration="1879000" />
       <workItem from="1715026432016" duration="4841000" />
       <workItem from="1715541834662" duration="3726000" />
-      <workItem from="1715545585303" duration="4910000" />
+      <workItem from="1715545585303" duration="7227000" />
+      <workItem from="1715795895116" duration="18000" />
+      <workItem from="1717002370173" duration="385000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -183,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715619186640</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Upraveni tridy StartingPage tak, aby se nedali otevrit okna tlacitkama nekolikrat, ale pokud budou otevrena tak se musi nejprve zavrit, aby jste je mohli znovu otevrit. Provedl jsem nejake graficke upravy napr font.">
+      <created>1715621078455</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1715621078455</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +229,7 @@
     <MESSAGE value="Upraveni par metod jako initializeGamenebo handleClick aby Timer fungoval tak jak bych chtel" />
     <MESSAGE value="Upraveni par metod jako initializeGame nebo handleClick aby Timer fungoval tak jak bych chtel" />
     <MESSAGE value="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna" />
+    <MESSAGE value="Upraveni tridy StartingPage tak, aby se nedali otevrit okna tlacitkama nekolikrat, ale pokud budou otevrena tak se musi nejprve zavrit, aby jste je mohli znovu otevrit. Provedl jsem nejake graficke upravy napr font." />
+    <option name="LAST_COMMIT_MESSAGE" value="Upraveni tridy StartingPage tak, aby se nedali otevrit okna tlacitkama nekolikrat, ale pokud budou otevrena tak se musi nejprve zavrit, aby jste je mohli znovu otevrit. Provedl jsem nejake graficke upravy napr font." />
   </component>
 </project>

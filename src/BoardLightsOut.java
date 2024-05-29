@@ -10,7 +10,7 @@ public class BoardLightsOut extends JFrame {
     private JButton[][] buttons;
 
     private ButtonsClickLogic buttonsClickLogic;
-    private Timer timer;
+    private TimeCounter timeCounter;
 
     private int moveCounter;
 
@@ -63,10 +63,13 @@ public class BoardLightsOut extends JFrame {
         buttonsClickLogic.toggleColorIfValid(row, col - 1);
         buttonsClickLogic.toggleColorIfValid(row, col + 1);
         if (areAllLightsOff()) {
-            int finalCountMoves = moveCounter+1;
-            System.out.println("WINNER");
-            System.out.println("You completed the puzzle in: "+ timer.getCurrentTime());
-            System.out.println("Your final amount of moves: "+ finalCountMoves);
+            int finalCountMoves = moveCounter + 1;
+            JOptionPane.showMessageDialog(
+                    this,
+                    "Congratulations!\nYou solved the puzzle in " + finalCountMoves + " moves.\nTime taken: " + timeCounter.getCurrentTime(),
+                    "You Win!",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
             dispose();
         }
     }
@@ -133,7 +136,7 @@ public class BoardLightsOut extends JFrame {
         JPanel timerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         JLabel timerLabel = new JLabel();
         timerPanel.add(timerLabel);
-        this.timer = new Timer(timerLabel);
+        this.timeCounter = new TimeCounter(timerLabel);
 
         JButton SuffleButton = new JButton("Shuffle");
         SuffleButton.addActionListener(new ActionListener(){
@@ -159,7 +162,7 @@ public class BoardLightsOut extends JFrame {
         setResizable(false);
         setVisible(true);
 
-        Timer timer = new Timer(timerLabel);
+        TimeCounter timer = new TimeCounter(timerLabel);
         new Thread(timer).start();
     }
 

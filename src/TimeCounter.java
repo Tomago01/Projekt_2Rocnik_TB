@@ -1,11 +1,11 @@
 import javax.swing.*;
 
-public class Timer implements Runnable {
+public class TimeCounter implements Runnable {
 
     private JLabel timerLabel;
     private long startTime;
 
-    public Timer(JLabel timerLabel) {
+    public TimeCounter(JLabel timerLabel) {
         this.timerLabel = timerLabel;
         this.startTime = System.currentTimeMillis();
     }
