@@ -1,3 +1,5 @@
+package LightsOut;
+
 import javax.swing.*;
 
 public class TimeCounter implements Runnable {

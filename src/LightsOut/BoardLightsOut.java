@@ -1,3 +1,8 @@
+package LightsOut;
+
+import LightsOut.ButtonsClickLogic;
+import LightsOut.TimeCounter;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
