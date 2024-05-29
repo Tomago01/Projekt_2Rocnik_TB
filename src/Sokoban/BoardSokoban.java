@@ -49,6 +49,13 @@ public class BoardSokoban extends JPanel {
         }
     }
 
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        drawWorld(g);
+    }
+
+
     private void drawWorld(Graphics g) {
         ImageIcon imageIcon1 = new ImageIcon("sources/woodenbox.png");
         ImageIcon imageIcon2 = new ImageIcon("sources/wall.png");
