@@ -134,4 +134,6 @@ public class BoardSokoban extends JPanel {
         return true;
     }
 
+
+
 }
