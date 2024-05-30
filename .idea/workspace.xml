@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Metoda movePlayer ktera definuje pohyb hrace po herni plose kde se muze a nemuze pohybovat">
-      <change afterPath="$PROJECT_DIR$/src/Sokoban/KeysInputs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pridani tridy KeysInputs ve ktere pres tridu KeyAdapter pridavam funkce sipek a wasd na klavesnici pro pohyb hrace a pridani do initializeBoard ve tride BoardSokoban">
       <change beforePath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +49,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="11742000" />
+      <workItem from="1717002370173" duration="12698000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -242,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717060296311</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Pridani tridy KeysInputs ve ktere pres tridu KeyAdapter pridavam funkce sipek a wasd na klavesnici pro pohyb hrace a pridani do initializeBoard ve tride BoardSokoban">
+      <created>1717065001164</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1717065001164</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,8 +265,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="metoda pro inicializaci hraciho pole a nahodne rozprostrit dlazdice" />
-    <MESSAGE value="pridani nove tridy LogicButtonsClick ve ktere budu delat logiku reagovani&#10;tlacitek ve hre lightsout" />
     <MESSAGE value="naimportoval jsem si metodu actionPerformed pres rozhtani ActionListener abych mohl provadet akce s tlacitkama a v te metode logiku po kliknuti na tlacitko ze zmeni barvu" />
     <MESSAGE value="pridal jsem dve metody jedna ktera zajistuje ze policka jsou v poli a otoci barvu a druha lokaci kolem vybraneho tlacitka a tu jsem pak zavolal v metode actionPerformed" />
     <MESSAGE value="pridavam metodu initializeGame ve ktere vytvarim okno(nastavuji) a Jpanel do ktereho vkladam jednotlive tlacitka" />
@@ -285,6 +288,8 @@
     <MESSAGE value="Vytvoreni metody drawWorld ktera vykresluje jak na herni desce budou vypadat jednotlive znaky pomoci novych promenych space a offset, offset jevelikost v pixelech od okraje plochy na ktere jsou charaktery a space jsou jednotliva policka. Trida Graphics mi pomaha pridat Images na znaky tyto obrazky jsem dal do slozky sources." />
     <MESSAGE value="pridani metody paintComponent ktera pomoci tridy Graphics vycisti hraci plochu a vykresli plochu a tim predchazi duplikovani nebo prekryvani charakteru." />
     <MESSAGE value="Metoda movePlayer ktera definuje pohyb hrace po herni plose kde se muze a nemuze pohybovat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Metoda movePlayer ktera definuje pohyb hrace po herni plose kde se muze a nemuze pohybovat" />
+    <MESSAGE value="Pridani tridy KeysInputs ve ktere pres tridu KeyAdapter pridavam funkce sipek a wasd na klavesnici pro pohyb hrace" />
+    <MESSAGE value="Pridani tridy KeysInputs ve ktere pres tridu KeyAdapter pridavam funkce sipek a wasd na klavesnici pro pohyb hrace a pridani do initializeBoard ve tride BoardSokoban" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridani tridy KeysInputs ve ktere pres tridu KeyAdapter pridavam funkce sipek a wasd na klavesnici pro pohyb hrace a pridani do initializeBoard ve tride BoardSokoban" />
   </component>
 </project>

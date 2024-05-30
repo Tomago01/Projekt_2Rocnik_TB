@@ -123,6 +123,15 @@ public class BoardSokoban extends JPanel {
             playerY = newY;
         }
     }
-
+    public boolean checkAllBoxesOnPlace() {
+        for (int y = 0; y < level.length; y++) {
+            for (int x = 0; x < level[y].length; x++) {
+                if (level[y][x] == '$' && !targetsForBoxes[y][x]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 
 }
