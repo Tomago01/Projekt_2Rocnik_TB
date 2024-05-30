@@ -89,4 +89,38 @@ public class BoardSokoban extends JPanel {
         }
     }
 
+
+    public void movePlayer(int dx, int dy) {
+        int newX = playerX + dx;
+        int newY = playerY + dy;
+
+        if (level[newY][newX] != '#') {
+            if (level[newY][newX] == '$') {
+                int nextX = newX + dx;
+                int nextY = newY + dy;
+
+                if (level[nextY][nextX] == ' ' || level[nextY][nextX] == '.') {
+                    level[newY][newX] = ' ';
+                    level[nextY][nextX] = '$';
+                } else {
+                    return;
+                }
+            }
+
+            if (targetsForBoxes[playerY][playerX]) {
+                level[playerY][playerX] = '.';
+            } else {
+                level[playerY][playerX] = ' ';
+            }
+
+            if (level[newY][newX] != '$') {
+                level[newY][newX] = '@';
+            }
+
+            playerX = newX;
+            playerY = newY;
+        }
+    }
+
+
 }
