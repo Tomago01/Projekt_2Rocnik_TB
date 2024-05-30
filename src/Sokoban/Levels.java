@@ -52,4 +52,28 @@ public class Levels {
             {'#', '#', '#', '#', '#', '#', '#'},
 
     };
+    private static char[][] copyLevel(char[][] level) {
+        char[][] copy = new char[level.length][];
+        for (int i = 0; i < level.length; i++) {
+            copy[i] = level[i].clone();
+        }
+        return copy;
+    }
+
+    public static char[][] getLevel(int levelNumber) {
+        switch (levelNumber) {
+            case 1:
+                return copyLevel(level1);
+            case 2:
+                return copyLevel(level2);
+            case 3:
+                return copyLevel(level3);
+            case 4:
+                return copyLevel(level4);
+            case 5:
+                return copyLevel(level5);
+            default:
+                throw new IllegalArgumentException("Invalid level number: " + levelNumber);
+        }
+    }
 }
