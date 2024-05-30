@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridani metody paintComponent ktera pomoci tridy Graphics vycisti hraci plochu a vykresli plochu a tim predchazi duplikovani nebo prekryvani charakteru.">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Metoda movePlayer ktera definuje pohyb hrace po herni plose kde se muze a nemuze pohybovat">
+      <change afterPath="$PROJECT_DIR$/src/Sokoban/KeysInputs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" afterDir="false" />
     </list>
@@ -50,7 +51,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="10334000" />
+      <workItem from="1717002370173" duration="11742000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -234,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717010972550</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Metoda movePlayer ktera definuje pohyb hrace po herni plose kde se muze a nemuze pohybovat">
+      <created>1717060296311</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1717060296311</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +260,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridani kostruktoru do tridy BoardLightsOut" />
     <MESSAGE value="metoda pro inicializaci hraciho pole a nahodne rozprostrit dlazdice" />
     <MESSAGE value="pridani nove tridy LogicButtonsClick ve ktere budu delat logiku reagovani&#10;tlacitek ve hre lightsout" />
     <MESSAGE value="naimportoval jsem si metodu actionPerformed pres rozhtani ActionListener abych mohl provadet akce s tlacitkama a v te metode logiku po kliknuti na tlacitko ze zmeni barvu" />
@@ -277,6 +284,7 @@
     <MESSAGE value="vytvoreni promenych na vysku a sirku v pixelech toho grafickeho prostredi a metody initializeBoard na definovani hraciho pole" />
     <MESSAGE value="Vytvoreni metody drawWorld ktera vykresluje jak na herni desce budou vypadat jednotlive znaky pomoci novych promenych space a offset, offset jevelikost v pixelech od okraje plochy na ktere jsou charaktery a space jsou jednotliva policka. Trida Graphics mi pomaha pridat Images na znaky tyto obrazky jsem dal do slozky sources." />
     <MESSAGE value="pridani metody paintComponent ktera pomoci tridy Graphics vycisti hraci plochu a vykresli plochu a tim predchazi duplikovani nebo prekryvani charakteru." />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani metody paintComponent ktera pomoci tridy Graphics vycisti hraci plochu a vykresli plochu a tim predchazi duplikovani nebo prekryvani charakteru." />
+    <MESSAGE value="Metoda movePlayer ktera definuje pohyb hrace po herni plose kde se muze a nemuze pohybovat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Metoda movePlayer ktera definuje pohyb hrace po herni plose kde se muze a nemuze pohybovat" />
   </component>
 </project>

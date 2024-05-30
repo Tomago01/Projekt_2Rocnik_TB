@@ -29,6 +29,8 @@ public class BoardSokoban extends JPanel {
     private void initializeBoard() {
         setFocusable(true);
         setPreferredSize(new Dimension(width, height));
+        KeysInputs adapter = new KeysInputs(this);
+        addKeyListener(adapter);
         initializeWorld();
         requestFocusInWindow();
     }
