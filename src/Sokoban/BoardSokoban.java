@@ -12,7 +12,8 @@ public class BoardSokoban extends JPanel {
 
     private char[][] level;
 
-    private int playerX, playerY;
+    int playerX;
+    int playerY;
 
     private boolean[][] targetsForBoxes;
 

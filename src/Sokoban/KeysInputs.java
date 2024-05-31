@@ -13,7 +13,6 @@ public class KeysInputs extends KeyAdapter {
     @Override
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
-
         switch (key) {
             case KeyEvent.VK_LEFT:
             case KeyEvent.VK_A:
@@ -35,5 +34,4 @@ public class KeysInputs extends KeyAdapter {
 
         boardSokoban.repaint();
     }
-
 }

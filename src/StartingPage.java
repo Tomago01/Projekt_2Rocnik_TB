@@ -18,7 +18,7 @@ public class StartingPage extends JFrame {
     private BoardSokoban boardSokoban;
 
     public StartingPage() {
-        super("Game hub - Game hub");
+        super("Puzzle Games - Game hub");
         createAndShowGamehub();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -49,6 +49,26 @@ public class StartingPage extends JFrame {
             }
         });
         add(button1);
+
+        JButton button2 = new JButton("Sokoban");
+        button2.setBackground(new Color(0, 216, 255));
+        button2.setForeground(Color.BLACK);
+        button2.setPreferredSize(new Dimension(200, 50));
+        button2.setFont(new Font("Arial", Font.BOLD, 16));
+        button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (newWindow == null || !newWindow.isVisible()) {
+                    newWindow = new JFrame("Choose Difficulty");
+                    levelChooserForSokoban();
+                    newWindow.setSize(280, 400);
+                    newWindow.setVisible(true);
+                } else {
+                    newWindow.toFront();
+                }
+            }
+        });
+        add(button2);
         pack();
     }
 
@@ -212,7 +232,7 @@ public class StartingPage extends JFrame {
         sokobanWindow.setLocationRelativeTo(null);
         sokobanWindow.setVisible(true);
 
-        sokobanWindow.requestFocusInWindow();
+        boardSokoban.requestFocusInWindow();
     }
 
 
