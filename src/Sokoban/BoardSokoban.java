@@ -2,6 +2,9 @@ package Sokoban;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import javax.imageio.ImageIO;
 
 public class BoardSokoban extends JPanel {
 
@@ -20,12 +23,29 @@ public class BoardSokoban extends JPanel {
     private char[][] currentLevel;
     private int currentLevelNumber;
 
+    private BufferedImage image1;
+    private BufferedImage image2;
+    private BufferedImage image3;
+    private BufferedImage image4;
+
     public BoardSokoban(char[][] level, int levelNumber) {
         currentLevelNumber = levelNumber;
         this.level = Levels.getLevel(currentLevelNumber);
         currentLevel = this.level;
         this.targetsForBoxes = new boolean[level.length][level[0].length];
+        loadImages();
         initializeBoard();
+    }
+
+    private void loadImages() {
+        try {
+            image1 = ImageIO.read(getClass().getResourceAsStream("/sources/woodenbox.png"));
+            image2 = ImageIO.read(getClass().getResourceAsStream("/sources/wall.png"));
+            image3 = ImageIO.read(getClass().getResourceAsStream("/sources/grass.png"));
+            image4 = ImageIO.read(getClass().getResourceAsStream("/sources/placespot.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void initializeBoard() {
@@ -36,8 +56,6 @@ public class BoardSokoban extends JPanel {
         initializeWorld();
         requestFocusInWindow();
     }
-
-
 
     public void initializeWorld() {
         for (int y = 0; y < level.length; y++) {
@@ -54,22 +72,12 @@ public class BoardSokoban extends JPanel {
     }
 
     @Override
-    public void paintComponent(Graphics g) {
+    protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         drawWorld(g);
     }
 
-
     private void drawWorld(Graphics g) {
-        ImageIcon imageIcon1 = new ImageIcon("sources/woodenbox.png");
-        ImageIcon imageIcon2 = new ImageIcon("sources/wall.png");
-        ImageIcon imageIcon3 = new ImageIcon("sources/grass.png");
-        ImageIcon imageIcon4 = new ImageIcon("sources/placespot.png");
-        Image image1 = imageIcon1.getImage();
-        Image image2 = imageIcon2.getImage();
-        Image image3 = imageIcon3.getImage();
-        Image image4 = imageIcon4.getImage();
-
         for (int y = 0; y < level.length; y++) {
             for (int x = 0; x < level[y].length; x++) {
                 char character = level[y][x];
@@ -92,7 +100,6 @@ public class BoardSokoban extends JPanel {
             }
         }
     }
-
 
     public void movePlayer(int dx, int dy) {
         int newX = playerX + dx;
@@ -125,6 +132,7 @@ public class BoardSokoban extends JPanel {
             playerY = newY;
         }
     }
+
     public boolean checkAllBoxesOnPlace() {
         for (int y = 0; y < level.length; y++) {
             for (int x = 0; x < level[y].length; x++) {
@@ -142,5 +150,4 @@ public class BoardSokoban extends JPanel {
         requestFocusInWindow();
         repaint();
     }
-
 }

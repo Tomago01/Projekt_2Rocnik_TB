@@ -9,6 +9,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
+/**
+ * The BoardLightsOut class represents the main game board for the Lights Out game.
+ * It initializes the game board, handles user interactions, and manages the game state.
+ */
 public class BoardLightsOut extends JFrame {
     private int[][] board;
     private int size;
@@ -19,19 +23,25 @@ public class BoardLightsOut extends JFrame {
 
     public int moveCounter;
 
-
+    /**
+     * Constructs a new BoardLightsOut game with the specified board size.
+     *
+     * @param size the size of the game board
+     */
     public BoardLightsOut(int size) {
         this.size = size;
-        this.moveCounter =0;
+        this.moveCounter = 0;
         this.board = new int[size][size];
         this.buttons = new JButton[size][size];
         this.buttonsClickLogic = new ButtonsClickLogic(0, 0, board, buttons, size);
         initializeBoard();
         initializeGame();
-
     }
 
-
+    /**
+     * Shuffles the game board to create a randomized starting configuration.
+     * Ensures that the board is not already solved after shuffling.
+     */
     private void shuffleBoard() {
         Random rand = new Random();
         int numShuffles = rand.nextInt(1000);
@@ -50,6 +60,11 @@ public class BoardLightsOut extends JFrame {
         }
     }
 
+    /**
+     * Checks if all the lights on the board are turned off.
+     *
+     * @return true if all lights are off, false otherwise
+     */
     public boolean areAllLightsOff() {
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length; j++) {
@@ -61,6 +76,13 @@ public class BoardLightsOut extends JFrame {
         return true;
     }
 
+    /**
+     * Handles the logic for when a button on the board is clicked.
+     * Toggles the color of the clicked button and its adjacent buttons.
+     *
+     * @param row the row of the clicked button
+     * @param col the column of the clicked button
+     */
     private void handleClick(int row, int col) {
         buttonsClickLogic.toggleColorIfValid(row, col);
         buttonsClickLogic.toggleColorIfValid(row - 1, col);
@@ -79,7 +101,9 @@ public class BoardLightsOut extends JFrame {
         }
     }
 
-
+    /**
+     * Initializes the game board with a random configuration of lights (on/off).
+     */
     public void initializeBoard() {
         Random random = new Random();
         for (int i = 0; i < size; i++) {
@@ -93,6 +117,10 @@ public class BoardLightsOut extends JFrame {
         }
     }
 
+    /**
+     * Initializes the game window and user interface components.
+     * Sets up the board, buttons, shuffle button, move counter, and timer.
+     */
     public void initializeGame() {
         setTitle("Lights Out Game");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -108,11 +136,11 @@ public class BoardLightsOut extends JFrame {
             for (int j = 0; j < size; j++) {
                 JButton button = new JButton();
                 button.setBackground(new Color(board[i][j]));
-                JPanel moveCounterPanel= new JPanel();
+                JPanel moveCounterPanel = new JPanel();
                 button.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        JButton clickedButton = (JButton)e.getSource();
+                        JButton clickedButton = (JButton) e.getSource();
                         int row = -1, col = -1;
                         for (int k = 0; k < size; k++) {
                             for (int l = 0; l < size; l++) {
@@ -126,7 +154,7 @@ public class BoardLightsOut extends JFrame {
                                 break;
                             }
                         }
-                        handleClick(row,col);
+                        handleClick(row, col);
                         moveCounter++;
                         counterLabel.setText("Moves: " + moveCounter);
                     }
@@ -144,7 +172,7 @@ public class BoardLightsOut extends JFrame {
         this.timeCounter = new TimeCounter(timerLabel);
 
         JButton SuffleButton = new JButton("Shuffle");
-        SuffleButton.addActionListener(new ActionListener(){
+        SuffleButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 shuffleBoard();
@@ -170,9 +198,4 @@ public class BoardLightsOut extends JFrame {
         TimeCounter timer = new TimeCounter(timerLabel);
         new Thread(timer).start();
     }
-
-
-
-
-
 }
