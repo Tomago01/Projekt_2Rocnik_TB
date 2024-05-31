@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="predelani metody createNewWindow() na createAndShowGamehub() s tim ze vykonavaji prakticky totoznou funkci">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pozmeneni metody createAndShowGamehub a pridani do konstruktoru a trochu upraveni konstruktoru">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
     </list>
@@ -29,14 +29,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tomik/Desktop/Projektova_slozka_2024/Projekt_2Rocnik_TB&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/Projekt_2Rocnik_TB",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -50,7 +54,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="21315000" />
+      <workItem from="1717002370173" duration="23892000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -283,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717143219861</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="pozmeneni metody createAndShowGamehub a pridani do konstruktoru a trochu upraveni konstruktoru">
+      <created>1717145289583</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1717145289583</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +312,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat" />
     <MESSAGE value="Vytvoreni metody pro zamichani herniho pole" />
     <MESSAGE value="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle" />
     <MESSAGE value="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna" />
@@ -326,6 +336,7 @@
     <MESSAGE value="Metoda copyLevel vytvari kopie levleu aby jsme pretvareli ty kopie a ne originalni formy levelu a get level vraci tyto kopie podle cisla" />
     <MESSAGE value="Pridani dalsich levelu do tridy Levels" />
     <MESSAGE value="predelani metody createNewWindow() na createAndShowGamehub() s tim ze vykonavaji prakticky totoznou funkci" />
-    <option name="LAST_COMMIT_MESSAGE" value="predelani metody createNewWindow() na createAndShowGamehub() s tim ze vykonavaji prakticky totoznou funkci" />
+    <MESSAGE value="pozmeneni metody createAndShowGamehub a pridani do konstruktoru a trochu upraveni konstruktoru" />
+    <option name="LAST_COMMIT_MESSAGE" value="pozmeneni metody createAndShowGamehub a pridani do konstruktoru a trochu upraveni konstruktoru" />
   </component>
 </project>

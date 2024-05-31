@@ -134,6 +134,11 @@ public class BoardSokoban extends JPanel {
         return true;
     }
 
-
+    public void restartLevel() {
+        level = Levels.getLevel(currentLevelNumber);
+        initializeWorld();
+        requestFocusInWindow();
+        repaint();
+    }
 
 }

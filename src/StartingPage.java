@@ -1,4 +1,6 @@
 import LightsOut.BoardLightsOut;
+import Sokoban.BoardSokoban;
+import Sokoban.Levels;
 
 import javax.swing.*;
 import java.awt.*;
@@ -10,8 +12,10 @@ import java.awt.event.WindowEvent;
 public class StartingPage extends JFrame {
     private BoardLightsOut gameLightsOutWindow = null;
 
-    private JFrame newWindow;
+    private JFrame chooserLightsOutWindow;
+    private JFrame sokobanWindow;
     private boolean windowIsVisible = false;
+    private BoardSokoban boardSokoban;
 
     public StartingPage() {
         super("Game hub - Game hub");
@@ -33,14 +37,14 @@ public class StartingPage extends JFrame {
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!windowIsVisible && (newWindow == null || !newWindow.isVisible())) {
-                    newWindow = new JFrame("Choose Difficulty");
+                if (!windowIsVisible && (chooserLightsOutWindow == null || !chooserLightsOutWindow.isVisible())) {
+                    chooserLightsOutWindow = new JFrame("Choose Difficulty");
                     difficultyChooserForLO();
-                    newWindow.setSize(280, 400);
-                    newWindow.setVisible(true);
+                    chooserLightsOutWindow.setSize(280, 400);
+                    chooserLightsOutWindow.setVisible(true);
                     windowIsVisible = true;
                 } else {
-                    newWindow.toFront();
+                    chooserLightsOutWindow.toFront();
                 }
             }
         });
@@ -49,15 +53,15 @@ public class StartingPage extends JFrame {
     }
 
     private void difficultyChooserForLO() {
-        newWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        newWindow.addWindowListener(new WindowAdapter() {
+        chooserLightsOutWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        chooserLightsOutWindow.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosed(WindowEvent e) {
                 windowIsVisible = false;
             }
         });
-        newWindow.setLayout(new GridLayout(4, 1));
-        newWindow.setResizable(true);
+        chooserLightsOutWindow.setLayout(new GridLayout(4, 1));
+        chooserLightsOutWindow.setResizable(true);
 
         String[] buttonLabels = {"3*3", "4*4", "5*5", "6*6"};
         String[] difficultyLabels = {"Difficulty: Easy", "Difficulty: Medium", "Difficulty: Hard", "Difficulty: Expert"};
@@ -70,7 +74,7 @@ public class StartingPage extends JFrame {
             JButton button = createButton(buttonLabels[i], buttonFont, buttonSize, new Color(0xFF962F));
             JLabel label = new JLabel(difficultyLabels[i], JLabel.CENTER);
             JPanel panel = createPanel(button, label);
-            newWindow.add(panel);
+            chooserLightsOutWindow.add(panel);
 
             int boardSize = boardSizes[i];
             button.addActionListener(new ActionListener() {
@@ -82,10 +86,10 @@ public class StartingPage extends JFrame {
         }
 
 
-        newWindow.pack();
-        newWindow.setLocationRelativeTo(null);
-        newWindow.setVisible(true);
-        newWindow.setResizable(false);
+        chooserLightsOutWindow.pack();
+        chooserLightsOutWindow.setLocationRelativeTo(null);
+        chooserLightsOutWindow.setVisible(true);
+        chooserLightsOutWindow.setResizable(false);
     }
 
     private JButton createButton(String text, Font font, Dimension size, Color color) {
