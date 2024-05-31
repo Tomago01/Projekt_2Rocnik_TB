@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pozmeneni levelu v difficultyChooserForLO na liche cisla pro 100% pravdepodobnost vyresitelnosti puzzlu">
-      <change afterPath="$PROJECT_DIR$/src/Sokoban/BoardSokobanTest.java" afterDir="false" />
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="vytvoril jsem si BoardSokobanTest pro tridu BoardSokoban ve ktere mam 3 testy prvni je jestli je hrac na hraci plose druhy je zkontrolovani jestli se hrac vazne pohnul o jedno doprava a treti je test na resetovani hraci plochy">
+      <change afterPath="$PROJECT_DIR$/src/LightsOut/BoardLightsOutTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt_2Rocnik_TB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt_2Rocnik_TB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LightsOut/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LightsOut/BoardLightsOut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +55,27 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="LightsOut" />
       <recent name="Sokoban" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoardSokobanTest.testRestartLevel">
+  <component name="RunManager" selected="JUnit.BoardLightsOutTest.testAreAllLightsOff">
+    <configuration name="BoardLightsOutTest.testAreAllLightsOff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_2Rocnik_TB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LightsOut.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LightsOut" />
+      <option name="MAIN_CLASS_NAME" value="LightsOut.BoardLightsOutTest" />
+      <option name="METHOD_NAME" value="testAreAllLightsOff" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoardSokobanTest.testInitWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Projekt_2Rocnik_TB" />
       <extension name="coverage">
@@ -110,6 +126,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoardLightsOutTest.testAreAllLightsOff" />
         <item itemvalue="JUnit.BoardSokobanTest.testRestartLevel" />
         <item itemvalue="JUnit.BoardSokobanTest.testMovePlayer" />
         <item itemvalue="JUnit.BoardSokobanTest.testInitWorld" />
@@ -129,7 +146,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="42201000" />
+      <workItem from="1717002370173" duration="44413000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -411,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717170180083</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="vytvoril jsem si BoardSokobanTest pro tridu BoardSokoban ve ktere mam 3 testy prvni je jestli je hrac na hraci plose druhy je zkontrolovani jestli se hrac vazne pohnul o jedno doprava a treti je test na resetovani hraci plochy">
+      <created>1717171988410</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1717171988410</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +453,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Upraveni par metod jako initializeGamenebo handleClick aby Timer fungoval tak jak bych chtel" />
     <MESSAGE value="Upraveni par metod jako initializeGame nebo handleClick aby Timer fungoval tak jak bych chtel" />
     <MESSAGE value="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna" />
     <MESSAGE value="Upraveni tridy StartingPage tak, aby se nedali otevrit okna tlacitkama nekolikrat, ale pokud budou otevrena tak se musi nejprve zavrit, aby jste je mohli znovu otevrit. Provedl jsem nejake graficke upravy napr font." />
@@ -454,6 +477,7 @@
     <MESSAGE value="Do metody createAndShowGamehub jsem pridal button na otevreni tabulky levlu neboli metodu levelChooserForSokoban s podminkou aby se okno nedalo otevirat nekolikrat" />
     <MESSAGE value="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO" />
     <MESSAGE value="Pozmeneni levelu v difficultyChooserForLO na liche cisla pro 100% pravdepodobnost vyresitelnosti puzzlu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pozmeneni levelu v difficultyChooserForLO na liche cisla pro 100% pravdepodobnost vyresitelnosti puzzlu" />
+    <MESSAGE value="vytvoril jsem si BoardSokobanTest pro tridu BoardSokoban ve ktere mam 3 testy prvni je jestli je hrac na hraci plose druhy je zkontrolovani jestli se hrac vazne pohnul o jedno doprava a treti je test na resetovani hraci plochy" />
+    <option name="LAST_COMMIT_MESSAGE" value="vytvoril jsem si BoardSokobanTest pro tridu BoardSokoban ve ktere mam 3 testy prvni je jestli je hrac na hraci plose druhy je zkontrolovani jestli se hrac vazne pohnul o jedno doprava a treti je test na resetovani hraci plochy" />
   </component>
 </project>

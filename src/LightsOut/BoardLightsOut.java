@@ -12,12 +12,12 @@ import java.util.Random;
 public class BoardLightsOut extends JFrame {
     private int[][] board;
     private int size;
-    private JButton[][] buttons;
+    public JButton[][] buttons;
 
     private ButtonsClickLogic buttonsClickLogic;
     private TimeCounter timeCounter;
 
-    private int moveCounter;
+    public int moveCounter;
 
 
     public BoardLightsOut(int size) {
@@ -80,7 +80,7 @@ public class BoardLightsOut extends JFrame {
     }
 
 
-    private void initializeBoard() {
+    public void initializeBoard() {
         Random random = new Random();
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
