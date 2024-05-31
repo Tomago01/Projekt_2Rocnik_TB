@@ -14,20 +14,29 @@ public class StartingPage extends JFrame {
     private boolean windowIsVisible = false;
 
     public StartingPage() {
-        super("Puzzle Games - game hub");
-        difficultyChooserForLO();
+        super("Game hub - Game hub");
+        createAndShowGamehub();
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setVisible(true);
     }
 
     private void createAndShowGamehub() {
-        JButton button = new JButton("Lights Out Game");
-        button.setBackground(Color.YELLOW);
-        button.setForeground(Color.BLACK);
-        button.addActionListener(new ActionListener() {
+        getContentPane().setBackground(new Color(255, 112, 112));
+        setLayout(new FlowLayout(FlowLayout.CENTER, 20, 50));
+
+        JButton button1 = new JButton("Lights Out");
+        button1.setBackground(new Color(0xFFED00));
+        button1.setForeground(Color.BLACK);
+        button1.setPreferredSize(new Dimension(200, 50));
+        button1.setFont(new Font("Arial", Font.BOLD, 16));
+        button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!windowIsVisible) {
+                if (!windowIsVisible && (newWindow == null || !newWindow.isVisible())) {
                     newWindow = new JFrame("Choose Difficulty");
                     difficultyChooserForLO();
+                    newWindow.setSize(280, 400);
                     newWindow.setVisible(true);
                     windowIsVisible = true;
                 } else {
@@ -35,13 +44,9 @@ public class StartingPage extends JFrame {
                 }
             }
         });
-        setLayout(new FlowLayout(FlowLayout.CENTER));
-        add(button);
-        setVisible(true);
-        setSize(500, 500);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        add(button1);
+        pack();
     }
-
 
     private void difficultyChooserForLO() {
         newWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -62,7 +67,7 @@ public class StartingPage extends JFrame {
         Dimension buttonSize = new Dimension(200, 100);
 
         for (int i = 0; i < buttonLabels.length; i++) {
-            JButton button = createButton(buttonLabels[i], buttonFont, buttonSize, new Color(0xFF962F)); // Pass the desired color
+            JButton button = createButton(buttonLabels[i], buttonFont, buttonSize, new Color(0xFF962F));
             JLabel label = new JLabel(difficultyLabels[i], JLabel.CENTER);
             JPanel panel = createPanel(button, label);
             newWindow.add(panel);
@@ -87,7 +92,7 @@ public class StartingPage extends JFrame {
         JButton button = new JButton(text);
         button.setFont(font);
         button.setPreferredSize(size);
-        button.setBackground(color); // Set background color
+        button.setBackground(color);
         return button;
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pridani dalsich levelu do tridy Levels">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="predelani metody createNewWindow() na createAndShowGamehub() s tim ze vykonavaji prakticky totoznou funkci">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
     </list>
@@ -50,7 +50,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="20068000" />
+      <workItem from="1717002370173" duration="21315000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717072776630</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="predelani metody createNewWindow() na createAndShowGamehub() s tim ze vykonavaji prakticky totoznou funkci">
+      <created>1717143219861</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1717143219861</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +301,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem" />
     <MESSAGE value="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat" />
     <MESSAGE value="Vytvoreni metody pro zamichani herniho pole" />
     <MESSAGE value="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle" />
@@ -319,6 +325,7 @@
     <MESSAGE value="pridani par levlu do tridy Levels z dvourozmernych poli charakteru." />
     <MESSAGE value="Metoda copyLevel vytvari kopie levleu aby jsme pretvareli ty kopie a ne originalni formy levelu a get level vraci tyto kopie podle cisla" />
     <MESSAGE value="Pridani dalsich levelu do tridy Levels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pridani dalsich levelu do tridy Levels" />
+    <MESSAGE value="predelani metody createNewWindow() na createAndShowGamehub() s tim ze vykonavaji prakticky totoznou funkci" />
+    <option name="LAST_COMMIT_MESSAGE" value="predelani metody createNewWindow() na createAndShowGamehub() s tim ze vykonavaji prakticky totoznou funkci" />
   </component>
 </project>
