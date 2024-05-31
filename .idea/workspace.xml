@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Do metody createAndShowGamehub jsem pridal button na otevreni tabulky levlu neboli metodu levelChooserForSokoban s podminkou aby se okno nedalo otevirat nekolikrat">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +54,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="37540000" />
+      <workItem from="1717002370173" duration="40723000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -321,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717163745238</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO">
+      <created>1717165662568</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1717165662568</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +347,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Vytvoril jsem si tridu Timer ve ktere budu delat cas jak dlouho bude neco uzivately trvat a implementoval jsem Runnable na nove vlakno a nadefinoval vlastnosti timerLabel a startTime a konstruktor" />
     <MESSAGE value="Vytvoril jsem metodu currentTime ktera udela nejaky format tech hodin a tu pak vkladam do metody run do cyklu ve kterem vlakno po sekundach uspavam a getter na metodu currentTime" />
     <MESSAGE value="Upraveni par metod jako initializeGamenebo handleClick aby Timer fungoval tak jak bych chtel" />
     <MESSAGE value="Upraveni par metod jako initializeGame nebo handleClick aby Timer fungoval tak jak bych chtel" />
@@ -364,6 +371,7 @@
     <MESSAGE value="pridani metody openSokobanWindow ktera otevre samotne hraci pole hry sokoban velikost vzdy podle typu levelu a jsou tam zakomponovany tri pomocna tlacitka" />
     <MESSAGE value="metoda levelChooserForSokoban ktara vola nove okno pro vytvoreni taulky levelu" />
     <MESSAGE value="Do metody createAndShowGamehub jsem pridal button na otevreni tabulky levlu neboli metodu levelChooserForSokoban s podminkou aby se okno nedalo otevirat nekolikrat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Do metody createAndShowGamehub jsem pridal button na otevreni tabulky levlu neboli metodu levelChooserForSokoban s podminkou aby se okno nedalo otevirat nekolikrat" />
+    <MESSAGE value="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO" />
   </component>
 </project>
