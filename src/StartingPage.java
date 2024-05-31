@@ -10,28 +10,28 @@ import java.awt.event.WindowEvent;
 public class StartingPage extends JFrame {
     private BoardLightsOut gameLightsOutWindow = null;
 
-    private JFrame w2;
-    private boolean w2IsVisible = false;
+    private JFrame newWindow;
+    private boolean windowIsVisible = false;
 
     public StartingPage() {
-        super("Game hub");
-        createAndShowGUI();
+        super("Puzzle Games - game hub");
+        difficultyChooserForLO();
     }
 
-    private void createAndShowGUI() {
+    private void createAndShowGamehub() {
         JButton button = new JButton("Lights Out Game");
         button.setBackground(Color.YELLOW);
         button.setForeground(Color.BLACK);
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!w2IsVisible) {
-                    w2 = new JFrame("Choose Difficulty");
-                    createNewWindow();
-                    w2.setVisible(true);
-                    w2IsVisible = true;
+                if (!windowIsVisible) {
+                    newWindow = new JFrame("Choose Difficulty");
+                    difficultyChooserForLO();
+                    newWindow.setVisible(true);
+                    windowIsVisible = true;
                 } else {
-                    w2.toFront();
+                    newWindow.toFront();
                 }
             }
         });
@@ -43,99 +43,69 @@ public class StartingPage extends JFrame {
     }
 
 
-    private void createNewWindow() {
-        w2.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        w2.addWindowListener(new WindowAdapter() {
+    private void difficultyChooserForLO() {
+        newWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        newWindow.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosed(WindowEvent e) {
-                w2IsVisible = false;
+                windowIsVisible = false;
             }
         });
-        w2.setLayout(new GridLayout(4, 1));
-        w2.setResizable(true);
+        newWindow.setLayout(new GridLayout(4, 1));
+        newWindow.setResizable(true);
 
-        JButton button1 = new JButton("3*3");
-        JButton button2 = new JButton("4*4");
-        JButton button3 = new JButton("5*5");
-        JButton button4 = new JButton("6*6");
-        Font buttonFont = new Font(button1.getFont().getName(), Font.BOLD, 30);
-        button1.setFont(buttonFont);
-        button2.setFont(buttonFont);
-        button3.setFont(buttonFont);
-        button4.setFont(buttonFont);
+        String[] buttonLabels = {"3*3", "4*4", "5*5", "6*6"};
+        String[] difficultyLabels = {"Difficulty: Easy", "Difficulty: Medium", "Difficulty: Hard", "Difficulty: Expert"};
+        int[] boardSizes = {3, 4, 5, 6};
 
-
-
+        Font buttonFont = new Font("default", Font.BOLD, 30);
         Dimension buttonSize = new Dimension(200, 100);
-        button1.setPreferredSize(buttonSize);
-        button2.setPreferredSize(buttonSize);
-        button3.setPreferredSize(buttonSize);
-        button4.setPreferredSize(buttonSize);
+
+        for (int i = 0; i < buttonLabels.length; i++) {
+            JButton button = createButton(buttonLabels[i], buttonFont, buttonSize, new Color(0xFF962F)); // Pass the desired color
+            JLabel label = new JLabel(difficultyLabels[i], JLabel.CENTER);
+            JPanel panel = createPanel(button, label);
+            newWindow.add(panel);
+
+            int boardSize = boardSizes[i];
+            button.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    createGameWindow(boardSize);
+                }
+            });
+        }
 
 
-        JLabel label1 = new JLabel("Difficulty: Easy", JLabel.CENTER);
-        JLabel label2 = new JLabel("Difficulty: Medium", JLabel.CENTER);
-        JLabel label3 = new JLabel("Difficulty: Hard", JLabel.CENTER);
-        JLabel label4 = new JLabel("Difficulty: Expert", JLabel.CENTER);
-
-
-        JPanel panel1 = new JPanel(new BorderLayout());
-        panel1.add(button1, BorderLayout.CENTER);
-        panel1.add(label1, BorderLayout.SOUTH);
-
-        JPanel panel2 = new JPanel(new BorderLayout());
-        panel2.add(button2, BorderLayout.CENTER);
-        panel2.add(label2, BorderLayout.SOUTH);
-
-        JPanel panel3 = new JPanel(new BorderLayout());
-        panel3.add(button3, BorderLayout.CENTER);
-        panel3.add(label3, BorderLayout.SOUTH);
-
-        JPanel panel4 = new JPanel(new BorderLayout());
-        panel4.add(button4, BorderLayout.CENTER);
-        panel4.add(label4, BorderLayout.SOUTH);
-
-
-        w2.add(panel1);
-        w2.add(panel2);
-        w2.add(panel3);
-        w2.add(panel4);
-
-
-        button1.addActionListener(e -> {
-            if (gameLightsOutWindow == null || !gameLightsOutWindow.isVisible()) {
-                gameLightsOutWindow = new BoardLightsOut(3);
-            }
-        });
-
-        button2.addActionListener(e -> {
-            if (gameLightsOutWindow == null || !gameLightsOutWindow.isVisible()) {
-                gameLightsOutWindow = new BoardLightsOut(4);
-            }
-        });
-
-
-        button3.addActionListener(e -> {
-            if (gameLightsOutWindow == null || !gameLightsOutWindow.isVisible()) {
-                gameLightsOutWindow = new BoardLightsOut(5);
-            }
-        });
-
-
-        button4.addActionListener(e -> {
-            if (gameLightsOutWindow == null || !gameLightsOutWindow.isVisible()) {
-                gameLightsOutWindow = new BoardLightsOut(6);
-            }
-        });
-
-
-        w2.pack();
-        w2.setLocationRelativeTo(null);
-        w2.setVisible(true);
-        w2.setResizable(false);
-
-
+        newWindow.pack();
+        newWindow.setLocationRelativeTo(null);
+        newWindow.setVisible(true);
+        newWindow.setResizable(false);
     }
+
+    private JButton createButton(String text, Font font, Dimension size, Color color) {
+        JButton button = new JButton(text);
+        button.setFont(font);
+        button.setPreferredSize(size);
+        button.setBackground(color); // Set background color
+        return button;
+    }
+
+
+    private JPanel createPanel(JButton button, JLabel label) {
+        JPanel panel = new JPanel(new BorderLayout());
+        panel.add(button, BorderLayout.CENTER);
+        panel.add(label, BorderLayout.SOUTH);
+        return panel;
+    }
+
+    private void createGameWindow(int size) {
+        if (gameLightsOutWindow == null || !gameLightsOutWindow.isVisible()) {
+            gameLightsOutWindow = new BoardLightsOut(size);
+        }
+    }
+
+
 
 
 }

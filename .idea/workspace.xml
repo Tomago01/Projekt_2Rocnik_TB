@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridani par levlu do tridy Levels z dvourozmernych poli charakteru.">
-      <change beforePath="$PROJECT_DIR$/src/Sokoban/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/Levels.java" afterDir="false" />
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pridani dalsich levelu do tridy Levels">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="14873000" />
+      <workItem from="1717002370173" duration="20068000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -261,7 +262,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717069766022</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Metoda copyLevel vytvari kopie levleu aby jsme pretvareli ty kopie a ne originalni formy levelu a get level vraci tyto kopie podle cisla">
+      <created>1717071907711</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1717071907711</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Pridani dalsich levelu do tridy Levels">
+      <created>1717072776630</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1717072776630</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,8 +294,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="pridavam metodu initializeGame ve ktere vytvarim okno(nastavuji) a Jpanel do ktereho vkladam jednotlive tlacitka" />
-    <MESSAGE value="vkladam metody do konstruktoru a zkousim v mainu" />
     <MESSAGE value="Vytvoreni nove tridy StartingPage ve ktere se budu vytvaret uvodni okno a nejaka dalsi okna v budoucnu createHubWindow je metoda na ytvoreni hub okna s tlacitkem" />
     <MESSAGE value="vytvoril jsem METODU createNewWindow ve ktere vytvarim nove okno ve kterym  si bude uzivatel vybirat v jake velikosti pole bude hrat" />
     <MESSAGE value="Vytvoreni metody pro zamichani herniho pole" />
@@ -304,6 +317,8 @@
     <MESSAGE value="Pridani tridy KeysInputs ve ktere pres tridu KeyAdapter pridavam funkce sipek a wasd na klavesnici pro pohyb hrace a pridani do initializeBoard ve tride BoardSokoban" />
     <MESSAGE value="checkAllBoxesOnPlace boolean metoda pro zjisteni jestli krabice jsou na targetsForBoxes" />
     <MESSAGE value="pridani par levlu do tridy Levels z dvourozmernych poli charakteru." />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani par levlu do tridy Levels z dvourozmernych poli charakteru." />
+    <MESSAGE value="Metoda copyLevel vytvari kopie levleu aby jsme pretvareli ty kopie a ne originalni formy levelu a get level vraci tyto kopie podle cisla" />
+    <MESSAGE value="Pridani dalsich levelu do tridy Levels" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pridani dalsich levelu do tridy Levels" />
   </component>
 </project>
