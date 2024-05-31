@@ -12,7 +12,7 @@ import java.awt.event.WindowEvent;
 public class StartingPage extends JFrame {
     private BoardLightsOut gameLightsOutWindow = null;
 
-    private JFrame chooserLightsOutWindow;
+    private JFrame newWindow;
     private JFrame sokobanWindow;
     private boolean windowIsVisible = false;
     private BoardSokoban boardSokoban;
@@ -37,14 +37,14 @@ public class StartingPage extends JFrame {
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (!windowIsVisible && (chooserLightsOutWindow == null || !chooserLightsOutWindow.isVisible())) {
-                    chooserLightsOutWindow = new JFrame("Choose Difficulty");
+                if (!windowIsVisible && (newWindow == null || !newWindow.isVisible())) {
+                    newWindow = new JFrame("Choose Difficulty");
                     difficultyChooserForLO();
-                    chooserLightsOutWindow.setSize(280, 400);
-                    chooserLightsOutWindow.setVisible(true);
+                    newWindow.setSize(280, 400);
+                    newWindow.setVisible(true);
                     windowIsVisible = true;
                 } else {
-                    chooserLightsOutWindow.toFront();
+                    newWindow.toFront();
                 }
             }
         });
@@ -53,15 +53,15 @@ public class StartingPage extends JFrame {
     }
 
     private void difficultyChooserForLO() {
-        chooserLightsOutWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        chooserLightsOutWindow.addWindowListener(new WindowAdapter() {
+        newWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        newWindow.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosed(WindowEvent e) {
                 windowIsVisible = false;
             }
         });
-        chooserLightsOutWindow.setLayout(new GridLayout(4, 1));
-        chooserLightsOutWindow.setResizable(true);
+        newWindow.setLayout(new GridLayout(4, 1));
+        newWindow.setResizable(true);
 
         String[] buttonLabels = {"3*3", "4*4", "5*5", "6*6"};
         String[] difficultyLabels = {"Difficulty: Easy", "Difficulty: Medium", "Difficulty: Hard", "Difficulty: Expert"};
@@ -74,7 +74,7 @@ public class StartingPage extends JFrame {
             JButton button = createButton(buttonLabels[i], buttonFont, buttonSize, new Color(0xFF962F));
             JLabel label = new JLabel(difficultyLabels[i], JLabel.CENTER);
             JPanel panel = createPanel(button, label);
-            chooserLightsOutWindow.add(panel);
+            newWindow.add(panel);
 
             int boardSize = boardSizes[i];
             button.addActionListener(new ActionListener() {
@@ -86,10 +86,10 @@ public class StartingPage extends JFrame {
         }
 
 
-        chooserLightsOutWindow.pack();
-        chooserLightsOutWindow.setLocationRelativeTo(null);
-        chooserLightsOutWindow.setVisible(true);
-        chooserLightsOutWindow.setResizable(false);
+        newWindow.pack();
+        newWindow.setLocationRelativeTo(null);
+        newWindow.setVisible(true);
+        newWindow.setResizable(false);
     }
 
     private JButton createButton(String text, Font font, Dimension size, Color color) {
@@ -213,6 +213,48 @@ public class StartingPage extends JFrame {
         sokobanWindow.setVisible(true);
 
         sokobanWindow.requestFocusInWindow();
+    }
+
+
+    private void levelChooserForSokoban() {
+        JPanel panel = new JPanel();
+        panel.setLayout(new GridLayout(0, 2, 10, 10));
+
+        String[] levels = {
+                "Level 1", "Level 2", "Level 3", "Level 4", "Level 5",
+                "Level 6", "Level 7", "Level 8", "Level 9", "Level 10"
+        };
+
+        for (int i = 0; i < levels.length; i++) {
+            int levelNumber = i + 1;
+            JButton levelButton = new JButton(levels[i]);
+            levelButton.setPreferredSize(new Dimension(200, 50));
+            levelButton.setFont(new Font("Arial", Font.BOLD, 23));
+            levelButton.setFocusPainted(false);
+            levelButton.setBackground(new Color(0, 216, 255));
+            levelButton.setForeground(Color.black);
+
+            levelButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if (sokobanWindow != null && sokobanWindow.isVisible()) {
+                        sokobanWindow.toFront();
+                    } else {
+                        openSokobanWindow(levelNumber);
+                    }
+                }
+            });
+
+            panel.add(levelButton);
+        }
+
+        newWindow = new JFrame();
+        newWindow.setLayout(new BorderLayout());
+        newWindow.setSize(400, 400);
+        newWindow.setLocationRelativeTo(null);
+        newWindow.add(panel, BorderLayout.CENTER);
+
+        newWindow.setVisible(true);
     }
 
 

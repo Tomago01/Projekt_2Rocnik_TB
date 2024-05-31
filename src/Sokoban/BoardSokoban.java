@@ -21,6 +21,7 @@ public class BoardSokoban extends JPanel {
 
     public BoardSokoban(char[][] level, int levelNumber) {
         currentLevelNumber = levelNumber;
+        this.level = Levels.getLevel(currentLevelNumber);
         currentLevel = this.level;
         this.targetsForBoxes = new boolean[level.length][level[0].length];
         initializeBoard();
