@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pozmeneni metody createAndShowGamehub a pridani do konstruktoru a trochu upraveni konstruktoru">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridani metody restartLevel do BoardSokoban pro funkci restartovani levelu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
     </list>
@@ -54,7 +54,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="23892000" />
+      <workItem from="1717002370173" duration="25499000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -294,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717145289583</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="pridani metody restartLevel do BoardSokoban pro funkci restartovani levelu">
+      <created>1717148593020</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1717148593020</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +319,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Vytvoreni metody pro zamichani herniho pole" />
     <MESSAGE value="Pozmeneni metody initializeGame pro pridani tlacitka Shuffle" />
     <MESSAGE value="Vytvoreni metody areAllLightsOff ktera bude vyhodnocovat jestli budou vsechna policka cerna" />
     <MESSAGE value="Vytvoreni pomocne metody handleClick kterou pouzuju v metode initializeGame abych mohl ukoncit hru pokud budou vsechna policka cerna. Vytvoreni podminky v shuffleBoard aby nemohla byt tlacitkem suffle hra vyhrana" />
@@ -337,6 +343,7 @@
     <MESSAGE value="Pridani dalsich levelu do tridy Levels" />
     <MESSAGE value="predelani metody createNewWindow() na createAndShowGamehub() s tim ze vykonavaji prakticky totoznou funkci" />
     <MESSAGE value="pozmeneni metody createAndShowGamehub a pridani do konstruktoru a trochu upraveni konstruktoru" />
-    <option name="LAST_COMMIT_MESSAGE" value="pozmeneni metody createAndShowGamehub a pridani do konstruktoru a trochu upraveni konstruktoru" />
+    <MESSAGE value="pridani metody restartLevel do BoardSokoban pro funkci restartovani levelu" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridani metody restartLevel do BoardSokoban pro funkci restartovani levelu" />
   </component>
 </project>

@@ -114,7 +114,106 @@ public class StartingPage extends JFrame {
         }
     }
 
+    private void openSokobanWindow(int levelNumber) {
+        sokobanWindow = new JFrame("Sokoban - Level " + levelNumber);
+        boardSokoban = new BoardSokoban(Levels.getLevel(levelNumber), levelNumber);
 
+
+        Font buttonFont = new Font("Arial", Font.BOLD, 18);
+        Color buttonColor = new Color(0, 216, 255);
+        JPanel buttonPanel = new JPanel(new GridLayout(1, 3, 10, 10));
+        JButton restartButton = new JButton("Restart");
+        restartButton.setPreferredSize(new Dimension(200, 50));
+        restartButton.setFont(buttonFont);
+        restartButton.setBackground(buttonColor);
+        JButton checkButton = new JButton("Check");
+        checkButton.setPreferredSize(new Dimension(200, 50));
+        checkButton.setFont(buttonFont);
+        checkButton.setBackground(buttonColor);
+        JButton quitButton = new JButton("Quit");
+        quitButton.setPreferredSize(new Dimension(200, 50));
+        quitButton.setFont(buttonFont);
+        quitButton.setBackground(buttonColor);
+
+
+        restartButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boardSokoban.restartLevel();
+                boardSokoban.requestFocusInWindow();
+            }
+        });
+
+        checkButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boolean allBoxesOnPlace = boardSokoban.checkAllBoxesOnPlace();
+                if (allBoxesOnPlace) {
+                    JOptionPane.showMessageDialog(null, "Congrats! All boxes are on on place!");
+                    sokobanWindow.dispose();
+                } else {
+                    JOptionPane.showMessageDialog(null, "Not all boxes are properly placed. Keep trying!");
+                    sokobanWindow.requestFocusInWindow();
+                }
+            }
+        });
+
+        quitButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sokobanWindow.dispose();
+            }
+        });
+
+        buttonPanel.add(restartButton);
+        buttonPanel.add(checkButton);
+        buttonPanel.add(quitButton);
+        sokobanWindow.add(boardSokoban, BorderLayout.CENTER);
+        sokobanWindow.add(buttonPanel, BorderLayout.SOUTH);
+
+        switch (levelNumber) {
+            case 1:
+                sokobanWindow.setSize(new Dimension(800, 800));
+                break;
+            case 2:
+                sokobanWindow.setSize(new Dimension(1000, 900));
+                break;
+            case 3:
+                sokobanWindow.setSize(new Dimension(700, 800));
+                break;
+            case 4:
+                sokobanWindow.setSize(new Dimension(800, 1000));
+                break;
+            case 5:
+                sokobanWindow.setSize(new Dimension(800, 800));
+                break;
+            case 6:
+                sokobanWindow.setSize(new Dimension(800, 800));
+                break;
+            case 7:
+                sokobanWindow.setSize(new Dimension(800, 800));
+                break;
+            case 8:
+                sokobanWindow.setSize(new Dimension(1100, 1000));
+                break;
+            case 9:
+                sokobanWindow.setSize(new Dimension(700, 800));
+                break;
+            case 10:
+                sokobanWindow.setSize(new Dimension(800, 800));
+                break;
+            default:
+                sokobanWindow.setSize(new Dimension(800, 800));
+                break;
+        }
+        sokobanWindow.setResizable(false);
+
+        sokobanWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        sokobanWindow.setLocationRelativeTo(null);
+        sokobanWindow.setVisible(true);
+
+        sokobanWindow.requestFocusInWindow();
+    }
 
 
 }
