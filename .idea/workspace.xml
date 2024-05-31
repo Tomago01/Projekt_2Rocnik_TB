@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Projekt_2Rocnik_TB:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="vytvoril jsem si BoardSokobanTest pro tridu BoardSokoban ve ktere mam 3 testy prvni je jestli je hrac na hraci plose druhy je zkontrolovani jestli se hrac vazne pohnul o jedno doprava a treti je test na resetovani hraci plochy">
-      <change afterPath="$PROJECT_DIR$/src/LightsOut/BoardLightsOutTest.java" afterDir="false" />
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridavam textury ktere se nepridali predtim">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LightsOut/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LightsOut/BoardLightsOut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +44,13 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
     "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/zkousec_projektu2",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
@@ -59,7 +65,7 @@
       <recent name="Sokoban" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoardLightsOutTest.testAreAllLightsOff">
+  <component name="RunManager">
     <configuration name="BoardLightsOutTest.testAreAllLightsOff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Projekt_2Rocnik_TB" />
       <extension name="coverage">
@@ -146,7 +152,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="44413000" />
+      <workItem from="1717002370173" duration="46580000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -435,7 +441,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717171988410</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="vytvoril jsem si BoardLightsOutTest ve ktere testuji prvni metodu AreAllLightsOff tak ze po inicializace by nemeli byt vsechna svetla vypnuta pak moveCounter tak ze by se mel pricitat po mackani tlacitek">
+      <created>1717178826726</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1717178826726</updated>
+    </task>
+    <task id="LOCAL-00043" summary="pridavam textury ktere se nepridali predtim">
+      <created>1717182192814</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1717182192814</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,8 +473,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Upraveni par metod jako initializeGame nebo handleClick aby Timer fungoval tak jak bych chtel" />
-    <MESSAGE value="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna" />
     <MESSAGE value="Upraveni tridy StartingPage tak, aby se nedali otevrit okna tlacitkama nekolikrat, ale pokud budou otevrena tak se musi nejprve zavrit, aby jste je mohli znovu otevrit. Provedl jsem nejake graficke upravy napr font." />
     <MESSAGE value="Upraveni metody handleClick tak aby ukazovala okno s vyhernim vysledkem a prejmenovani tridy Timer" />
     <MESSAGE value="Udelel jsem package pro lepsi prehlednost a delam novou tridu BoardSokoban ve ktere bude mechanika hry sokoban udelal jsem si promene se kteryma budu pracovat jako pole charakteru podle ceho budu delat levely a kazdy charakter bude mit jinou funkci. Souradnice pro pohyb hrace" />
@@ -478,6 +496,8 @@
     <MESSAGE value="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO" />
     <MESSAGE value="Pozmeneni levelu v difficultyChooserForLO na liche cisla pro 100% pravdepodobnost vyresitelnosti puzzlu" />
     <MESSAGE value="vytvoril jsem si BoardSokobanTest pro tridu BoardSokoban ve ktere mam 3 testy prvni je jestli je hrac na hraci plose druhy je zkontrolovani jestli se hrac vazne pohnul o jedno doprava a treti je test na resetovani hraci plochy" />
-    <option name="LAST_COMMIT_MESSAGE" value="vytvoril jsem si BoardSokobanTest pro tridu BoardSokoban ve ktere mam 3 testy prvni je jestli je hrac na hraci plose druhy je zkontrolovani jestli se hrac vazne pohnul o jedno doprava a treti je test na resetovani hraci plochy" />
+    <MESSAGE value="vytvoril jsem si BoardLightsOutTest ve ktere testuji prvni metodu AreAllLightsOff tak ze po inicializace by nemeli byt vsechna svetla vypnuta pak moveCounter tak ze by se mel pricitat po mackani tlacitek" />
+    <MESSAGE value="pridavam textury ktere se nepridali predtim" />
+    <option name="LAST_COMMIT_MESSAGE" value="pridavam textury ktere se nepridali predtim" />
   </component>
 </project>
