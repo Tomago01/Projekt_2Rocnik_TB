@@ -80,12 +80,12 @@ public class StartingPage extends JFrame {
                 windowIsVisible = false;
             }
         });
-        newWindow.setLayout(new GridLayout(4, 1));
+        newWindow.setLayout(new GridLayout(6, 1));
         newWindow.setResizable(true);
 
-        String[] buttonLabels = {"3*3", "4*4", "5*5", "6*6"};
-        String[] difficultyLabels = {"Difficulty: Easy", "Difficulty: Medium", "Difficulty: Hard", "Difficulty: Expert"};
-        int[] boardSizes = {3, 4, 5, 6};
+        String[] buttonLabels = {"3*3", "4*4", "5*5", "6*6", "8*8", "10*10"};
+        String[] difficultyLabels = {"Difficulty: Easy", "Difficulty: Medium", "Difficulty: Hard", "Difficulty: Very Hard", "Difficulty: Extreme", "Difficulty: Impossible"};
+        int[] boardSizes = {3, 4, 5, 6, 8, 10};
 
         Font buttonFont = new Font("default", Font.BOLD, 30);
         Dimension buttonSize = new Dimension(200, 100);
@@ -104,7 +104,6 @@ public class StartingPage extends JFrame {
                 }
             });
         }
-
 
         newWindow.pack();
         newWindow.setLocationRelativeTo(null);
