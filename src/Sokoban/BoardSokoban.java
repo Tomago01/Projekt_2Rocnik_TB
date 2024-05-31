@@ -10,10 +10,10 @@ public class BoardSokoban extends JPanel {
     private final int width = 1600;
     private final int height = 1600;
 
-    private char[][] level;
+    public char[][] level;
 
-    int playerX;
-    int playerY;
+    public int playerX;
+    public int playerY;
 
     private boolean[][] targetsForBoxes;
 

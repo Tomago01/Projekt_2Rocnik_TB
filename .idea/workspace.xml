@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Pozmeneni levelu v difficultyChooserForLO na liche cisla pro 100% pravdepodobnost vyresitelnosti puzzlu">
+      <change afterPath="$PROJECT_DIR$/src/Sokoban/BoardSokobanTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt_2Rocnik_TB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt_2Rocnik_TB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -31,9 +34,16 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
     "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/zkousec_projektu2",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -41,6 +51,71 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Sokoban" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BoardSokobanTest.testRestartLevel">
+    <configuration name="BoardSokobanTest.testInitWorld" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_2Rocnik_TB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sokoban.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sokoban" />
+      <option name="MAIN_CLASS_NAME" value="Sokoban.BoardSokobanTest" />
+      <option name="METHOD_NAME" value="testInitWorld" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardSokobanTest.testMovePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_2Rocnik_TB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sokoban.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sokoban" />
+      <option name="MAIN_CLASS_NAME" value="Sokoban.BoardSokobanTest" />
+      <option name="METHOD_NAME" value="testMovePlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoardSokobanTest.testRestartLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Projekt_2Rocnik_TB" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sokoban.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Sokoban" />
+      <option name="MAIN_CLASS_NAME" value="Sokoban.BoardSokobanTest" />
+      <option name="METHOD_NAME" value="testRestartLevel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BoardSokobanTest.testRestartLevel" />
+        <item itemvalue="JUnit.BoardSokobanTest.testMovePlayer" />
+        <item itemvalue="JUnit.BoardSokobanTest.testInitWorld" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,7 +129,7 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="40723000" />
+      <workItem from="1717002370173" duration="42201000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -329,7 +404,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717165662568</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Pozmeneni levelu v difficultyChooserForLO na liche cisla pro 100% pravdepodobnost vyresitelnosti puzzlu">
+      <created>1717170180083</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1717170180083</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +429,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Vytvoril jsem metodu currentTime ktera udela nejaky format tech hodin a tu pak vkladam do metody run do cyklu ve kterem vlakno po sekundach uspavam a getter na metodu currentTime" />
     <MESSAGE value="Upraveni par metod jako initializeGamenebo handleClick aby Timer fungoval tak jak bych chtel" />
     <MESSAGE value="Upraveni par metod jako initializeGame nebo handleClick aby Timer fungoval tak jak bych chtel" />
     <MESSAGE value="Pridani nove vlastnosti tridy moveCounter ktera pocita pocet zmen. Update tridy handle click pro konecne vypsani a initializeGame pro vytvoreni Labelu a pridani do okna" />
@@ -372,6 +453,7 @@
     <MESSAGE value="metoda levelChooserForSokoban ktara vola nove okno pro vytvoreni taulky levelu" />
     <MESSAGE value="Do metody createAndShowGamehub jsem pridal button na otevreni tabulky levlu neboli metodu levelChooserForSokoban s podminkou aby se okno nedalo otevirat nekolikrat" />
     <MESSAGE value="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO" />
-    <option name="LAST_COMMIT_MESSAGE" value="pridani dalsich levelu hry Lights out do metody difficultyChooserForLO" />
+    <MESSAGE value="Pozmeneni levelu v difficultyChooserForLO na liche cisla pro 100% pravdepodobnost vyresitelnosti puzzlu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pozmeneni levelu v difficultyChooserForLO na liche cisla pro 100% pravdepodobnost vyresitelnosti puzzlu" />
   </component>
 </project>
