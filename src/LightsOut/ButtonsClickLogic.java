@@ -69,8 +69,8 @@ public class ButtonsClickLogic implements ActionListener {
     /**
      * toggles the buttons by one on each side around the specified button
      *
-     * @param row the row of the center button
-     * @param col the column of the center button
+     * @param row  row of the center button
+     * @param col  column of the center button
      */
     private void toggleColorsAround(int row, int col) {
         toggleColorIfValid(row - 1, col);
