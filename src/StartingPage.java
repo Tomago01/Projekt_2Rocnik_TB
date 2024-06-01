@@ -9,6 +9,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+/**
+ * Represents the starting page for the Puzzle Games project.
+ * Allows the user to choose between different puzzle games, right now it is Lights Out and Sokoban.
+ */
 public class StartingPage extends JFrame {
     private BoardLightsOut gameLightsOutWindow = null;
 
@@ -17,6 +21,9 @@ public class StartingPage extends JFrame {
     private boolean windowIsVisible = false;
     private BoardSokoban boardSokoban;
 
+    /**
+     * Constructs a StartingPage object and initializes the starting page for whole project the Puzzle Games.
+     */
     public StartingPage() {
         super("Puzzle Games - Game hub");
         createAndShowGamehub();
@@ -25,6 +32,9 @@ public class StartingPage extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * Creates and displays the hub or starting page with buttons for choosing between different puzzle games.
+     */
     private void createAndShowGamehub() {
         getContentPane().setBackground(new Color(255, 112, 112));
         setLayout(new FlowLayout(FlowLayout.CENTER, 20, 50));
@@ -72,6 +82,9 @@ public class StartingPage extends JFrame {
         pack();
     }
 
+    /**
+     * Creates a window for choosing difficulty levels for the game Lights Out .
+     */
     private void difficultyChooserForLO() {
         newWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         newWindow.addWindowListener(new WindowAdapter() {
@@ -111,6 +124,15 @@ public class StartingPage extends JFrame {
         newWindow.setResizable(false);
     }
 
+    /**
+     * Creates a JButton with specified text, font, size, and background color.
+     *
+     * @param text text to display on the button
+     * @param font font of the button text
+     * @param size size of the button
+     * @param color background color of the button
+     * @return returns the created JButton
+     */
     private JButton createButton(String text, Font font, Dimension size, Color color) {
         JButton button = new JButton(text);
         button.setFont(font);
@@ -119,7 +141,13 @@ public class StartingPage extends JFrame {
         return button;
     }
 
-
+    /**
+     * Creates a JPanel containing the specified button and label.
+     *
+     * @param button the button to add to the panel
+     * @param label  the label to add to the panel
+     * @return returns the created JPanel
+     */
     private JPanel createPanel(JButton button, JLabel label) {
         JPanel panel = new JPanel(new BorderLayout());
         panel.add(button, BorderLayout.CENTER);
@@ -127,12 +155,22 @@ public class StartingPage extends JFrame {
         return panel;
     }
 
+    /**
+     * Creates a window for the Lights Out game with the specified board size.
+     *
+     * @param size size of the Lights Out game board.
+     */
     private void createGameWindow(int size) {
         if (gameLightsOutWindow == null || !gameLightsOutWindow.isVisible()) {
             gameLightsOutWindow = new BoardLightsOut(size);
         }
     }
 
+    /**
+     * Opens a window for the Sokoban game with the specified level number and with supportive buttons Check, Restart and Quit.
+     *
+     * @param levelNumber is number of the Sokoban game level to open
+     */
     private void openSokobanWindow(int levelNumber) {
         sokobanWindow = new JFrame("Sokoban - Level " + levelNumber);
         boardSokoban = new BoardSokoban(Levels.getLevel(levelNumber), levelNumber);
@@ -234,6 +272,9 @@ public class StartingPage extends JFrame {
         boardSokoban.requestFocusInWindow();
     }
 
+    /**
+     * Creates a window for user to choose Sokoban game level.
+     */
 
     private void levelChooserForSokoban() {
         JPanel panel = new JPanel();

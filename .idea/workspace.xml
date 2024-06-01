@@ -6,14 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="Jar soubor">
+    <list default="true" id="4402e7fe-bfc8-41bd-94c5-1d38ae540736" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/placespot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/wall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/woodenbox.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LightsOut/BoardLightsOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LightsOut/BoardLightsOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LightsOut/ButtonsClickLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LightsOut/ButtonsClickLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LightsOut/TimeCounter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LightsOut/TimeCounter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/BoardSokoban.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sokoban/KeysInputs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/KeysInputs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sokoban/Levels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sokoban/Levels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StartingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +53,11 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/zkousec_projektu2",
-    "project.structure.last.edited": "Artifacts",
+    "last_opened_file_path": "C:/Users/Tomik/Desktop/Projektova_slozka_2024/Projekt_2Rocnik_TB",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -173,7 +173,8 @@
       <workItem from="1715541834662" duration="3726000" />
       <workItem from="1715545585303" duration="7227000" />
       <workItem from="1715795895116" duration="18000" />
-      <workItem from="1717002370173" duration="49043000" />
+      <workItem from="1717002370173" duration="55024000" />
+      <workItem from="1717237093400" duration="8199000" />
     </task>
     <task id="LOCAL-00001" summary="pridani kostruktoru do tridy BoardLightsOut">
       <created>1715025971760</created>
@@ -483,7 +484,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717182314468</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="upraveni tridy BoardSokoban jelikoz mi to nechtelo nacist textury kdyz jsem projekt spoustel pres jar soubor.Pridal jsem loadImages() metodu ve ktere nacitam soubory pomoci knihovny ImageIO">
+      <created>1717185052795</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1717185052795</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -501,8 +509,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Upraveni metody handleClick tak aby ukazovala okno s vyhernim vysledkem a prejmenovani tridy Timer" />
-    <MESSAGE value="Udelel jsem package pro lepsi prehlednost a delam novou tridu BoardSokoban ve ktere bude mechanika hry sokoban udelal jsem si promene se kteryma budu pracovat jako pole charakteru podle ceho budu delat levely a kazdy charakter bude mit jinou funkci. Souradnice pro pohyb hrace" />
     <MESSAGE value="pridal jsem metodu initializeWorld ve ktere definuji charaktery pro hrace zavinacem a targetsForBoxes teckou. Metoda prochazi tu delku X,Y toho levlu a na tyhle charaktery nastavi danou funkci" />
     <MESSAGE value="vytvoreni promenych na vysku a sirku v pixelech toho grafickeho prostredi a metody initializeBoard na definovani hraciho pole" />
     <MESSAGE value="Vytvoreni metody drawWorld ktera vykresluje jak na herni desce budou vypadat jednotlive znaky pomoci novych promenych space a offset, offset jevelikost v pixelech od okraje plochy na ktere jsou charaktery a space jsou jednotliva policka. Trida Graphics mi pomaha pridat Images na znaky tyto obrazky jsem dal do slozky sources." />
@@ -526,6 +532,8 @@
     <MESSAGE value="vytvoril jsem si BoardLightsOutTest ve ktere testuji prvni metodu AreAllLightsOff tak ze po inicializace by nemeli byt vsechna svetla vypnuta pak moveCounter tak ze by se mel pricitat po mackani tlacitek" />
     <MESSAGE value="pridavam textury ktere se nepridali predtim" />
     <MESSAGE value="Jar soubor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jar soubor" />
+    <MESSAGE value="upraveni tridy BoardSokoban jelikoz mi to nechtelo nacist textury kdyz jsem projet spoustel prez jar soubor loadImages() metoda ve ktere nacitam soubory pomoci knihovny ImageIO" />
+    <MESSAGE value="upraveni tridy BoardSokoban jelikoz mi to nechtelo nacist textury kdyz jsem projekt spoustel pres jar soubor.Pridal jsem loadImages() metodu ve ktere nacitam soubory pomoci knihovny ImageIO" />
+    <option name="LAST_COMMIT_MESSAGE" value="upraveni tridy BoardSokoban jelikoz mi to nechtelo nacist textury kdyz jsem projekt spoustel pres jar soubor.Pridal jsem loadImages() metodu ve ktere nacitam soubory pomoci knihovny ImageIO" />
   </component>
 </project>

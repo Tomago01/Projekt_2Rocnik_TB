@@ -3,13 +3,26 @@ package Sokoban;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+/**
+ * Class handling keyboard inputs for the Sokoban game.
+ */
 public class KeysInputs extends KeyAdapter {
     private final BoardSokoban boardSokoban;
 
+    /**
+     * Constructor for KeysInputs object with specific game board.
+     *
+     * @param boardSokoban the game board to handle keyboard inputs for
+     */
     public KeysInputs(BoardSokoban boardSokoban) {
         this.boardSokoban = boardSokoban;
     }
 
+    /**
+     * Handles what to do when specific key pressed.
+     *
+     * @param e the key event.
+     */
     @Override
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();

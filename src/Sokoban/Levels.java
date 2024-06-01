@@ -1,5 +1,8 @@
 package Sokoban;
 
+/**
+ * Access to different levels themselves made from characters for the Sokoban game.
+ */
 public class Levels {
     private static final char[][] level1 = {
             {'#', '#', '#', '#', '#', '#', '#'},
@@ -101,7 +104,12 @@ public class Levels {
             {'#', '#', '#', '#', '#', '#', '#'},
     };
 
-
+    /**
+     * Creates a copy of that level specified there.
+     *
+     * @param level the level we are making copy of.
+     * @return returns copy of specified level.
+     */
     private static char[][] copyLevel(char[][] level) {
         char[][] copy = new char[level.length][];
         for (int i = 0; i < level.length; i++) {
@@ -110,6 +118,13 @@ public class Levels {
         return copy;
     }
 
+    /**
+     * Gets the specified level.
+     *
+     * @param levelNumber the number of the level we want to retrieve
+     * @return returns specified level as a two-dimensional char array
+     * @throws IllegalArgumentException if the level number is invalid
+     */
     public static char[][] getLevel(int levelNumber) {
         switch (levelNumber) {
             case 1:

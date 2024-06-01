@@ -6,6 +6,9 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 
+/**
+ * This class represents game board of the Sokoban puzzle.
+ */
 public class BoardSokoban extends JPanel {
 
     private final int offset = 100;
@@ -28,6 +31,12 @@ public class BoardSokoban extends JPanel {
     private BufferedImage image3;
     private BufferedImage image4;
 
+    /**
+     * Constructor of a Sokoban game board with the specified level and level number.
+     *
+     * @param level one game board level that are seen in class Levels so two-dimensional set of characters.
+     * @param levelNumber number of the current level.
+     */
     public BoardSokoban(char[][] level, int levelNumber) {
         currentLevelNumber = levelNumber;
         this.level = Levels.getLevel(currentLevelNumber);
@@ -37,6 +46,9 @@ public class BoardSokoban extends JPanel {
         initializeBoard();
     }
 
+    /**
+     * Loads textures that are used in the game board.
+     */
     private void loadImages() {
         try {
             image1 = ImageIO.read(getClass().getResourceAsStream("/sources/woodenbox.png"));
@@ -48,6 +60,9 @@ public class BoardSokoban extends JPanel {
         }
     }
 
+    /**
+     * Initializes the game board.
+     */
     private void initializeBoard() {
         setFocusable(true);
         setPreferredSize(new Dimension(width, height));
@@ -57,6 +72,9 @@ public class BoardSokoban extends JPanel {
         requestFocusInWindow();
     }
 
+    /**
+     * Initializes the game world that is different for individual levels.
+     */
     public void initializeWorld() {
         for (int y = 0; y < level.length; y++) {
             for (int x = 0; x < level[y].length; x++) {
@@ -71,12 +89,22 @@ public class BoardSokoban extends JPanel {
         }
     }
 
+    /**
+     * repaints the game board.
+     *
+     * @param g object of class Graphics to paint with.
+     */
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         drawWorld(g);
     }
 
+    /**
+     * Draws the game world with the textures.
+     *
+     * @param g the Graphics object that helps to draw.
+     */
     private void drawWorld(Graphics g) {
         for (int y = 0; y < level.length; y++) {
             for (int x = 0; x < level[y].length; x++) {
@@ -101,6 +129,12 @@ public class BoardSokoban extends JPanel {
         }
     }
 
+    /**
+     * Moves the player on the game board.
+     *
+     * @param dx change in x coordinate.
+     * @param dy change in y coordinate.
+     */
     public void movePlayer(int dx, int dy) {
         int newX = playerX + dx;
         int newY = playerY + dy;
@@ -133,6 +167,11 @@ public class BoardSokoban extends JPanel {
         }
     }
 
+    /**
+     * Checks if all boxes are on their target spots.
+     *
+     * @return false when all boxes are not on target spots, otherwise true.
+     */
     public boolean checkAllBoxesOnPlace() {
         for (int y = 0; y < level.length; y++) {
             for (int x = 0; x < level[y].length; x++) {
@@ -144,6 +183,9 @@ public class BoardSokoban extends JPanel {
         return true;
     }
 
+    /**
+     * Restarts current level.
+     */
     public void restartLevel() {
         level = Levels.getLevel(currentLevelNumber);
         initializeWorld();
